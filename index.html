@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="anime.min.js"></script>
+    <title>Sean A Yager</title>
+</head>
+<body>
+    
+    <!-- Wrapper for landing page clickthrough -->
+    <section id="landingPage">
+    
+        <div class="imageOriginSet">
+            <img class="overlay" src="./assets/imgs/12.png" alt="">
+            <img class="overlay" src="./assets/imgs/13.png" alt="">
+            <img class="overlay" src="./assets/imgs/9.png" alt="">
+            <img class="overlay" src="./assets/imgs/10.png" alt="">
+            <img class="overlay" src="./assets/imgs/2.png" alt="">
+            <img class="overlay" src="./assets/imgs/7.png" alt="">
+            <img class="overlay" src="./assets/imgs/3.png" alt="">
+            <img class="overlay" src="./assets/imgs/18.png" alt="">
+            <img class="overlay" src="./assets/imgs/4.png" alt="">
+            <img class="overlay" src="./assets/imgs/5.png" alt="">
+            <img class="overlay" src="./assets/imgs/6.png" alt="">
+            <img class="overlay" src="./assets/imgs/1.png" alt="">
+            <img class="overlay" src="./assets/imgs/8.png" alt="">
+            <img class="overlay" src="./assets/imgs/11.png" alt="">
+            <img class="overlay" src="./assets/imgs/16.png" alt="">
+            <img class="overlay" src="./assets/imgs/17.png" alt="">
+            <img class="overlay" src="./assets/imgs/14.png" alt="">
+            <img class="overlay" src="./assets/imgs/15.png" alt="">
+            <img class="overlay" src="./assets/imgs/19.png" alt="">
+            <img class="overlay" src="./assets/imgs/20.png" alt="">
+        </div>
+        
+        <section id="name">
+            <h1>
+                SEAN A. YAGER
+            </h1>
+            <p>Cartoonist | Web Dev | Storyteller </p>
+        </section>
+        
+        <section class="clickthrough">
+            <h2>
+                SEE MORE
+            </h2>
+        </section>
+    </section>
+
+    <script>
+        anime({
+            targets: '.overlay',
+            keyframes: [
+                {opacity:1, translateX: 326},
+                {opacity:0, translateX: 652},
+            ],
+            duration: 6000,
+            delay: anime.stagger(3000), 
+            loop: true,
+            easing: 'spring(1, 80, 10, 0)',
+        });
+
+        anime({
+            targets: '#name',
+            opacity:1,
+            delay: 1000, 
+            duration:10000,
+        });
+        
+        anime({
+            targets: '.clickthrough',
+            opacity:1,
+            delay: 2000, 
+            duration:10000,
+        });
+    </script>
+
+</body>
+</html>
