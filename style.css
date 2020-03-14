@@ -41,6 +41,13 @@ p   {
     font-size:22px;
 }
 
+.clickthrough h2:hover {
+    background:white;
+    border:2px solid rgb(46, 45, 53);
+    color:rgb(46, 45, 53);
+    cursor:pointer;
+}
+
 /* Scrollbar formatting */
 
 
@@ -84,6 +91,7 @@ p   {
     background:rgb(46, 45, 53);
     color:white;
     padding:15px;
+    border:2px solid rgb(46, 45, 53);
 }
 
 @keyframes images {
