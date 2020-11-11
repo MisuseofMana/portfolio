@@ -28,8 +28,6 @@
             <h2 class='reveal'>Web Dev | Cartoonist | Storyteller </h2>
         </section>
 
-        <br>
-
         <section>
             <p class="reveal">
                 Sean, (a.k.a Shin), (a.k.a @MisuseofMana), is a cartoonist and comic illustrator located in Austin, TX. By day he codes, creates, and maintains a myriad of websites for various clients. By night he summons creatures, camaraderie, and conflicts to enrich his comic universe, the realm of Amara.
@@ -39,8 +37,6 @@
                 He grew up in the Indiana cornfields swinging tree branch swords and imagining backyard adventures. Sean attended IUPUI and Herron School of Art for several years before deciding that college debt wasn't for him. He now works freelance for himself on the side while taking on coding jobs to pay the bills.
             </p>
         </section>
-        
-        <br>
 
         <section class="socialMedia reveal">
             <a href="https://github.com/MisuseofMana"><img src="@/assets/imgs/icons/github.png" alt=""></a>
@@ -49,13 +45,6 @@
             <a href="https://www.linkedin.com/in/seanyager/"><img src="@/assets/imgs/icons/linkedin.png" alt=""></a>
             <a href="mailto:seanyagerart@gmail.com"><img src="@/assets/imgs/icons/gmail.png" alt=""></a>
         </section>
-
-        <a href="#artPage">
-            <section class="reveal arrowContainer">
-                &darr;
-            </section>
-        </a>
-
     </section>
 </template>
 
@@ -77,8 +66,60 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.socialMedia {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .socialMedia img{
+    margin:10px 10px 0 10px;
+    width:14vw;
+}
+
+.socialMedia img:hover {
+    filter:drop-shadow(0px 0px 5px #1eff00) invert();
+}
+
+.overlay {
+    position:absolute;
+}
+.imageOriginSet {
+    height:326px;
+    width:326px;
+    position:relative;
+    left:-326px;
+}
+.imageOriginSet img {
+    width:326px;
+    opacity:0;
+}
+
+a {
+    text-decoration:none;
+}
+
+h1{
+    font-size: 16vw;
+}
+
+h2 {
+    font-size:6vw;
+}
+
+p {
+    font-size:5vw;
+}
+
+
+
+/* Mobile Port */
+@media (min-width: 667px) {}
+
+/* Tablets and Up */
+@media (min-width: 768px) {
+    .socialMedia img{
     margin:10px 10px 0 10px;
 }
 
@@ -102,7 +143,6 @@ export default {
 
 #name {
     text-align: center;
-    width:326px;
 }
 
 .arrowContainer {
@@ -129,6 +169,7 @@ export default {
 
 a {
     text-decoration:none;
+}
 }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section id="artPage" class="heroWrapper">
+  <section id="gamesPage" class="heroWrapper">
 
       <h1>GAMES &amp; FUN</h1>
         
@@ -47,4 +47,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  font-size:14vw;
+}
+
+/* Mobile Port */
+@media (min-width: 667px) {}
+
+/* Tablets and Up */
+@media (min-width: 768px) {}
 </style>

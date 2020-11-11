@@ -37,4 +37,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  font-size:9vw;
+}
+
+/* Mobile Port */
+@media (min-width: 667px) {}
+
+/* Tablets and Up */
+@media (min-width: 768px) {}
 </style>
