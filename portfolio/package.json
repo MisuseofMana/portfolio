@@ -13,7 +13,8 @@
     "animejs": "^3.2.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-awesome": "^4.1.0"
+    "vue-awesome": "^4.1.0",
+    "vue-toasted": "^1.1.28"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
