@@ -1,95 +1,113 @@
 <template>
-    <section class="cardBody" :class="{'notAllowed' : !link, 'allowed' : link}">
-        <a :href="link" target="_blank" @click="checkLink">
-            <section class="cardImage" :style="{backgroundImage: `url(${require(`@/assets/imgs/${background}.png`)})`}">
+    <section class="cardTemplate" :key="links[this.currentNumber].title">
 
-            </section>
-            <section class="cardOverlay">
-                <h1>{{ title }}</h1>
-                <p v-for="(sentences, index) in description" :key='sentences[0]+index'>{{ sentences }}</p>
-            </section>
-        </a>
+        <p class="leftArrow flexCenter" @click="backNavigation"><v-icon name="arrow-circle-left" scale="2"></v-icon></p>
+        
+        <h1 class="title">{{ links[this.currentNumber].title}}</h1>
+            
+        <a class="cardImage" :class="{'notAllowed' : !links[this.currentNumber].link, 'allowed' : links[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`@/assets/imgs/${links[this.currentNumber].background}.png`)})`}" :href="links[this.currentNumber].link" target="_blank" @click="checkLink"></a>
+    
+        <section class="description">
+            <p v-for="(sentences, index) in links[this.currentNumber].description" :key='sentences[0]+index'>{{ sentences }}</p>
+        </section>
+
+        <p class="rightArrow flexCenter" @click="forwardNavigation"><v-icon name="arrow-circle-right" scale="2"></v-icon></p>
     </section>
 </template>
 
 <script>
     export default {
         name: 'CardTemplate',
-        props:['background', 'card-alt', 'title', 'description', 'link', 'enabled'],
+        props:['links'],
+        data() {
+            return {
+                navigationAlert: {
+                    theme: "outline", 
+                    position: "bottom-center",
+                    duration:3500,
+                    singleton:true
+                },
+                currentNumber: 0,
+                navigated: 0,
+            }
+        },
         methods: {
             checkLink() {
-                if(!this.link){
+                if(!this.links[this.currentNumber].link){
                     return false;
                 }
                 else {
                     return true;
                 }
-            }
+            },
+            forwardNavigation() {
+                if(this.currentNumber < this.links.length-1) this.currentNumber++;
+                else this.currentNumber = 0
+                this.navigated++
+                this.checkNavigation()
+            },
+            backNavigation() {
+                if(this.currentNumber > 0) this.currentNumber-- ;
+                else this.currentNumber = this.links.length - 1
+                this.navigated++
+                this.checkNavigation()
+            },
+            checkNavigation() {
+                if(this.navigated === 3) this.showToast()
+            },
+            showToast() {
+                this.$toasted.show('Tip: Try clicking an image to find out more about that project.', this.navigationAlert)
+            },
+        },
+        created: function() {
+            this.currentNumber = Math.floor(Math.random() * Math.floor(this.links.length-1));
         }
     }
 </script>
 
 <style scoped>
 /* Mobile Styles */
-.cardBody, a {
-    width:90vw;
+.cardTemplate {
     display:grid;
-    height:50vh;
-    grid-template-rows:1fr;
-    grid-template-columns:90vw;
+    height:250px;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-template-areas:
+    "title title title"
+    "arrowLeft card arrowRight"
+    "about about about"
+    ;
     border-radius:20px;
     margin:0 auto;
     text-decoration:none;
 }
 
-.allowed a:hover > .cardImage {
-    filter:blur(2px) brightness(1.2);
-}
-
-.notAllowed a:hover > .cardImage {
-    filter:blur(2px) brightness(.3) grayscale(1);
-}
-
-.cardBody a:hover > .cardOverlay h1, a:hover > .cardOverlay p, a:hover {
-    color:rgb(255, 255, 255);
-}
-
-a:hover > .cardOverlay {
-    opacity:1;
-    background:rgba(0,0,0,.6);
-    border-radius:20px;
-}
-
-.cardBody:not(:last-child) {
-    margin-bottom:20px;
+.title {
+    grid-area: title;
+    font-size:8vw;
 }
 
 .cardImage {
+    display:block;
     border-radius:20px;
-    background-position: top;
+    width:100%;
+    min-height:140px;
+    background-position: center;
     background-size: cover;
-    grid-row:1/2;
-    grid-column: 1 / 2;
-    z-index:0;
+    grid-area:card;
 }
 
-.cardOverlay {
-    grid-row:1/2;
-    grid-column:1/2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    border-radius:20px;
-    align-items:center;
-    text-align:center;
-    background: rgba(0,0,0,.55);
-    color:white;
-    z-index:1;
+.description {
+    grid-area:about;
+    font-size:4vw;
 }
 
-h1 {
-    color:white;
-    font-size:8vw;
+.leftArrow {
+ grid-area:arrowLeft;
+}
+
+.rightArrow {   
+    grid-area:arrowRight;
 }
 
 .notAllowed {
