@@ -4,12 +4,26 @@ html {
     scroll-behavior:smooth;
 }
 
+.autoGrid {
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+hr {
+    margin: 20px 0;
+}
+
 /* Reuseable Variables*/
 :root {
     --h1-font: 'Neucha', cursive;
     --h1-color: rgb(46, 45, 53);    
     --site-color: rgb(255, 255, 255);
     --plain-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.toasted {
+    font-family: var(--plain-font);
 }
 
 .reveal {
@@ -37,6 +51,12 @@ html {
     align-content: space-around;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.flexCenter {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexRowStart {
