@@ -4,6 +4,8 @@ import App from './App.vue'
 import Icon from 'vue-awesome/components/Icon'
 import Toasted from 'vue-toasted';
 
+import Links from './plugins/links.js'
+
 import 'vue-awesome/icons/keyboard'
 import 'vue-awesome/icons/file-code'
 import 'vue-awesome/icons/laptop-code'
@@ -31,23 +33,17 @@ Vue.use(VueRouter);
 
 import Home from './components/HomePage.vue'
 import About from './components/AboutPage.vue'
-import Comics from './components/ComicsPage.vue'
-import Books from './components/BooksPage.vue'
-import Coding from './components/CodingPage.vue'
-import Podcasts from './components/PodcastsPage.vue'
-import Games from './components/GamesPage.vue'
-import Photos from './components/PhotosPage.vue'
+import Project from './components/ProjectTemplate.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
-  { path: '/comics', component: Comics },
-  { path: '/books', component: Books },
-  { path: '/coding', component: Coding },
-  { path: '/podcasts', component: Podcasts },
-  { path: '/games', component: Games },
-  { path: '/photography', component: Photos },
-
+  { path: '/comics', component: Project, props: { content:Links.comics} },
+  { path: '/books', component: Project, props: { content:Links.books} },
+  { path: '/coding', component: Project, props: { content:Links.coding} },
+  { path: '/podcasts', component: Project, props: { content:Links.podcasts} },
+  { path: '/games', component: Project, props: { content:Links.games} },
+  { path: '/photography', component: Project, props: { content:Links.photography} },
 ]
 
 const router = new VueRouter({
