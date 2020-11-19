@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import {links} from '../plugins/links.js'
+import Links from '../plugins/links.js'
 
     export default {
         name: 'CardTemplate',
