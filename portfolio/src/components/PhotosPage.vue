@@ -5,7 +5,7 @@
         </section>
 
         <section class="hero">
-            <p>Back in the early 2000's I bought a Cannon Rebel T3 camera and it quickly became a good friend of mine. I twist and alter my mundane life into a catalogue of still frames that tell a story beyond the captured moment. Look carefully, you might find more than you expect.</p>
+            <p></p>
         </section>
 
         <section class="cardBorder hero" v-for="(links, index) in this.filteredLinks" :key="links.title + index">
