@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <NavBar/>
-    <HomePage/>
+
+    <div id="background">
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </div>
 
     <LandingPage v-if="false"/>
     <ResumePage v-if="false"/>
@@ -10,11 +15,9 @@
 
 <script>
 import '@/assets/styles/style.css'
-
-
+import '@/assets/styles/transitions.css'
 
 import NavBar from '@/components/NavBar.vue'
-import HomePage from '@/components/HomePage.vue'
 import LandingPage from '@/components/LandingPage.vue'
 import ResumePage from '@/components/ResumePage.vue'
 
@@ -22,21 +25,26 @@ export default {
   name: 'App',
   components: {
     NavBar,
-    HomePage,
     LandingPage,
     ResumePage,
-  }
+  },
+  data() {
+    return {
+      title: "Home",
+    }
+  },
 }
 </script>
 
 <style>
-
-#app {
-    background-image: url('../src/assets/imgs/portfolio-stack.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:100vh;
+#background {
+  width:100vw;
+  min-height:calc(100vh - 46px);
+  background-image: url('../src/assets/imgs/portfolio-stack-mobile.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:1px 0 1px 0;
 }
 
 /* Mobile Port */
