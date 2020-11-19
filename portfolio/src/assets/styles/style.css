@@ -4,6 +4,15 @@ html {
     scroll-behavior:smooth;
 }
 
+body {
+    background-image: url('../imgs/portfolio-stack-mobile.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    margin:0;
+}
+
 .hero {
     padding:10px;
     width:85vw;
@@ -31,6 +40,14 @@ hr {
 
 .reveal {
     opacity:0;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.floatRight {
+    float:right;
 }
 
 /* Global Style for each "Page" to take up the full screen */
@@ -91,29 +108,25 @@ hr {
 
 /* Style Guide */
 /* Formatting for semantic elements - removing browser differences */
-body {
-    margin:0;
-    padding:0;
-    background-color:var(--site-color);
-}
 
 /* Font Styling */
 h1 {
     font-family: var(--h1-font);
     color:var(--h1-color);
-    margin:0;
+    margin:10px;
 }
 
 h2, h3, h4 {
     font-family: var(--plain-font);
     color:var(--h1-color);
-    margin:0;
+    font-weight:100;
 }
 
 p   {
     font-family: var(--plain-font);
     margin:10px 0;
     padding:0 20px;
+    font-weight:100;
 }
 
 ul {
@@ -130,13 +143,6 @@ li{
 
 /* Mobile Portait */
 @media (min-width: 500px) {
-    h1 {
-
-    }
-    
-    p{
-
-    }
 }
 
 
