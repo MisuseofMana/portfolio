@@ -37,14 +37,12 @@ export default {
 </script>
 
 <style>
-#background {
-  width:100vw;
-  min-height:calc(100vh - 46px);
-  background-image: url('../src/assets/imgs/portfolio-stack-mobile.png');
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding:1px 0 1px 0;
+#app {
+  min-height:100vh;
+}
+
+p {
+  text-align:left;
 }
 
 /* Mobile Port */
