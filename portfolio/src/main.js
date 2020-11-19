@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
 import Icon from 'vue-awesome/components/Icon'
 import Toasted from 'vue-toasted';
@@ -25,10 +26,38 @@ import 'vue-awesome/icons/link'
 
 Vue.component('v-icon', Icon);
 
-Vue.use(Toasted)
+Vue.use(Toasted);
+Vue.use(VueRouter);
 
-Vue.config.productionTip = false
+import Home from './components/HomePage.vue'
+import About from './components/AboutPage.vue'
+import Comics from './components/ComicsPage.vue'
+import Books from './components/BooksPage.vue'
+import Coding from './components/CodingPage.vue'
+import Podcasts from './components/PodcastsPage.vue'
+import Games from './components/GamesPage.vue'
+import Photos from './components/PhotosPage.vue'
+
+const routes = [
+  { path: '/', component: Home },
+  { path: '/about', component: About },
+  { path: '/comics', component: Comics },
+  { path: '/books', component: Books },
+  { path: '/coding', component: Coding },
+  { path: '/podcasts', component: Podcasts },
+  { path: '/games', component: Games },
+  { path: '/photography', component: Photos },
+
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  routes // short for `routes: routes`
+})
+
+Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
+  router,
 }).$mount('#app')
