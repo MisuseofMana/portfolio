@@ -4,18 +4,18 @@
       <p>Nice to meet you! I'm Sean Yager, a web developer, a comics illustrator, a 3D artist, a poet, a storyteller, but mostly I'm a well versed, certified techology nerd.</p>
       <p>Stay a while and browse my myriad of projects, or tap the navbar for more!</p>
     
-      <hr>
+      <hr class="ifMobile">
+      <br class="ifDesktop">
 
-      <section class="carousel">
+        <CardTemplateMobile class="ifMobile"/>
+        <CardTemplateDesktop class="ifDesktop"/>
         
-        <CardTemplate/>
-        
-      </section>
     </section>
 </template>
 
 <script>
-    import CardTemplate from '@/components/CardTemplate.vue'
+    import CardTemplateMobile from '@/components/CardTemplateMobile.vue'
+    import CardTemplateDesktop from '@/components/CardTemplateDesktop.vue'
     
     export default {
       data() {
@@ -23,7 +23,8 @@
       }
     },
     components: {
-      CardTemplate,
+      CardTemplateMobile,
+      CardTemplateDesktop,
     },
     }
 </script>
@@ -31,25 +32,46 @@
 <style scoped>
 h1 {
   font-size:12vw;
+  text-align:left;
 }
 
 p{
-  font-size:4vw;
+  font-size:6vw;
 };
 
 
 /* Mobile Port */
 @media (min-width: 500px) {
-h1 {
+/* h1 {
   font-size:10vw;
 }
 
 p{
-  font-size:1vw;
-};
+  font-size:6vw;
+}; */
 
 }
 
 /* Tablets and Up */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  h1  {
+    font-size:5vw;
+    text-align:left;
+  }
+  
+  p {
+    font-weight:100;
+    font-size:2.3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size:3vw;
+  }
+  p {
+    font-size:1.4vw;
+    font-weight:100;
+  }
+}
 </style>
