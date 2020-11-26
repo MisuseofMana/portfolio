@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <NavBar/>
+    <NavBar class="ifMobile"/>
+    <DesktopNavBar class="ifDesktop"/>
 
-    <div id="background">
-      <transition name="fade" mode="out-in">
-        <router-view></router-view>
+      <transition name="slide" mode="out-in">
+        <router-view :key="$route.fullPath"></router-view>
       </transition>
-    </div>
 
     <LandingPage v-if="false"/>
     <ResumePage v-if="false"/>
@@ -18,6 +17,8 @@ import '@/assets/styles/style.css'
 import '@/assets/styles/transitions.css'
 
 import NavBar from '@/components/NavBar.vue'
+import DesktopNavBar from '@/components/DesktopNavBar.vue'
+
 import LandingPage from '@/components/LandingPage.vue'
 import ResumePage from '@/components/ResumePage.vue'
 
@@ -25,6 +26,7 @@ export default {
   name: 'App',
   components: {
     NavBar,
+    DesktopNavBar,
     LandingPage,
     ResumePage,
   },
@@ -40,6 +42,7 @@ export default {
 #app {
   min-height:100vh;
 }
+
 
 p {
   text-align:left;
