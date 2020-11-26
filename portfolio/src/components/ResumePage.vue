@@ -1,11 +1,10 @@
 <template>
-  <section id="resumePage" class="heroWrapper">
-        <section class="paper">
-          <section class="resume">
+  <section class="resumePage">
+          <section class="resume hero">
             <header>
-              <h2>Sean Yager's</h2>
               <h1>RESUME OF A LVL 27 WEB DEV</h1>
-              <h3> Web Designer, Comics Artist, Illustrator, Puzzle Solver, Storyteller, Friendly Guy</h3>
+              <h2>Sean A. Yager</h2>
+              <h3 style="centerText"> Web Designer, Comics Artist, Illustrator, Puzzle Solver, Storyteller, Friendly Guy</h3>
             </header>
 
 
@@ -60,19 +59,19 @@
             </section>
             
             <section class="education">
-              <h1>Education</h1>
+              <h2>Education</h2>
 
               <section class="block">
-                <h2>Full Stack Bootcamp</h2>
-                <h3>Austin Coding Academy</h3>
+                <h3>Full Stack Bootcamp</h3>
+                <h4>Austin Coding Academy</h4>
                 <p class="date">MAR 2020 - SEP 2020</p>
                 <p>Completed this biweekly intensive bootcamp course over 7 months during COVID quarantine, I receieved a full stack certificate.</p>
                 <p>The bootcamp covered HTML, CSS, Javascript, React.js, Github, Node.js, Unit Testing, SQL, API's and many other libraries.</p>
               </section>
 
               <section class="block">
-                <h2>IUPUI</h2>
-                <h3>Indianapolis, IN</h3>
+                <h3>IUPUI</h3>
+                <h4>Indianapolis, IN</h4>
                 <h4>Media Arts and Science</h4>
                 <p class="date">2011 - 2015, 2018</p>
                 <p>Studied various subject matters from digital media, illustration, and cartooning.</p>
@@ -103,9 +102,6 @@
 
 
           </section>
-        </section>
-
-        
   </section>
 </template>
 
@@ -121,18 +117,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 h1 {
   font-size:10vw;
   text-align:center;
 }
 
 h2 {
-  font-size:12vw;
+  font-size:6vw;
+  text-align:left;
 }
 
 h3 {
   font-size:4vw;
+  font-weight:600;
+  text-align:left;
+}
+
+h3.centerText {
   text-align:center;
+}
+
+h4 {
+  font-size:3vw;
+  text-align:left;
 }
 
 .skills p {
@@ -199,6 +208,10 @@ header {
 .experience {
   grid-area: experience;
 }
+
+.experience ul li{
+  text-align:left;
+};
 
 .education {
   grid-area: education;
