@@ -6,17 +6,19 @@ html {
 
 body {
     background-image: url('../imgs/portfolio-stack-mobile.png');
-    background-position: top;
+    background-position: center;
     background-size: cover;
+    background-attachment:fixed;
     background-repeat: no-repeat;
     min-height:100vh;
     margin:0;
+    padding: 0px 0 20px 0;
 }
 
 .hero {
     padding:10px;
     width:85vw;
-    margin:10px auto;
+    margin:20px auto;
     text-align:center;
     background:white;
     box-shadow: 1px 1px 4px black;
@@ -36,6 +38,7 @@ hr {
 
 .toasted {
     font-family: var(--plain-font);
+    font-size:3vw;
 }
 
 .reveal {
@@ -69,8 +72,34 @@ hr {
     display:flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+}
+
+.flexRowCenter {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexRowEnd {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flexRowWrap {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: flex-start;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+}
+
+.flexRowCustom {
+    display:flex;
+    flex-direction: row;
 }
 
 .flexColumn {
@@ -119,13 +148,12 @@ h1 {
 h2, h3, h4 {
     font-family: var(--plain-font);
     color:var(--h1-color);
-    font-weight:100;
+    margin:0;
 }
 
 p   {
     font-family: var(--plain-font);
-    margin:10px 0;
-    padding:0 20px;
+    margin:10px;
     font-weight:100;
 }
 
@@ -141,13 +169,58 @@ li{
     font-family: var(--plain-font);
 }
 
+.ifDesktop {
+    display:none;
+}
+
+.ifMobile {
+    display:block;
+}
+
 /* Mobile Portait */
 @media (min-width: 500px) {
+    .ifDesktop {
+        display:none;
+    }
+    
+    .ifMobile {
+        display:block;
+    }
 }
 
 
 /* Tablet and Up */
 @media (min-width: 768px) {
-
+    .toasted.outline {
+        font-family: var(--plain-font);
+        font-size:5vw;
+    }
+    .ifDesktop {
+        display:none;
+    }
+    
+    .ifMobile {
+        display:block;
+    }
 }
 
+@media (min-width: 1024px) {
+    body {
+        background-image: url('../imgs/portfolio-stack.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        min-height:100vh;
+        margin:0;
+        padding: 0px 0 20px 0;
+    }
+
+    .ifDesktop {
+        display:block;
+    }
+    
+    .ifMobile {
+        display:none;
+    }
+}
