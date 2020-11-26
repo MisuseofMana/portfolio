@@ -1,5 +1,5 @@
 <template>
-    <nav @click="toggleNav()" class="navBar flexRow">
+    <nav @click="toggleNav()" class="navHeader flexRow">
       <section class="title">
         <h1>SEAN YAGER</h1>
         <transition name="fade" mode="out-in">
@@ -8,21 +8,33 @@
       </section>
 
       <section class="menuButton">
-          <v-icon name="hamburger"></v-icon>
+          <v-icon name="hamburger" scale="3"></v-icon>
       </section>
 
-      <section v-if="navOpen" class="navMenu">
-        <ul>
-          <router-link to="/"><li>Home</li></router-link>
-          <router-link to="/about"><li>About</li></router-link>
-          <router-link to="/comics"><li>Comics</li></router-link>
-          <router-link to="/books"><li>Books</li></router-link>
-          <router-link to="/coding"><li>Coding</li></router-link>
-          <router-link to="/podcasts"><li>Podcasts</li></router-link>
-          <router-link to="/games"><li>Games</li></router-link>
-          <router-link to="/photography"><li>Photography</li></router-link>
-        </ul>
-      </section>
+      <transition key="navigation" name="growAppear" mode="out-in">
+        <section v-if="navOpen" class="navMenu">
+            <section class="navHeader flexRow">
+              <section class="title">
+                <h1>NAVIGATION</h1>
+              </section>
+
+              <section class="menuButton">
+                <v-icon name="window-close" scale="3"></v-icon>
+              </section>
+            </section>
+          <ul>
+            <router-link to="/"><li>Home</li></router-link>
+            <router-link to="/about"><li>About</li></router-link>
+            <router-link to="/comics"><li>Comics</li></router-link>
+            <router-link to="/books"><li>Books</li></router-link>
+            <router-link to="/coding"><li>Coding</li></router-link>
+            <router-link to="/podcasts"><li>Podcasts</li></router-link>
+            <router-link to="/games"><li>Games</li></router-link>
+            <router-link to="/photography"><li>Photography</li></router-link>
+            <router-link to="/resume"><li>Resume</li></router-link>
+          </ul>
+        </section>
+      </transition>
     </nav>
 </template>
 
@@ -36,7 +48,7 @@
             ":Storyteller",
             ":Comics Artist",
             ":Designer",
-            ":Web Developer",
+            ":Web Dev",
             ":Maker",
             ":Poet",
             ":Friend"
@@ -69,35 +81,36 @@
 </script>
 
 <style scoped>
-.navBar{
+.navHeader{
   border-bottom:1px solid black;
   background:white;
-  position:relative;
+  position: sticky;
+  width:100%;
+  top:0;
   justify-content:space-between;
   z-index:9999;
+  padding:5px 0;
+  margin:0 0 10px 0;
 }
 
 .title{
   display:flex;
   justify-content:flex-start;
   align-items:center;
-}
-
-.title h1{
-  margin: 0 0 0 10px;
-  grid-area: title;
+  margin: 0 0 0 5px;
 }
 
 .menuButton {
-    grid-area: hamburg;
     display:flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     margin-right:13px;
 }
 
 h1 {
-  font-size:8vw;
+  font-size:7vw;
+  margin:0 0 0 10px;
+  padding:10px 0;
 }
 
 h3 {
@@ -111,9 +124,13 @@ p {
 }
 
 .navMenu {
+  position:absolute;
+  top:0;
+  left:0;
   background:white;
   box-shadow: 1px 1px 3px black;
   width:100%;
+  z-index:9999;
 }
 
 .navMenu ul li {
@@ -121,14 +138,15 @@ p {
   list-style: none;
   text-align:center;
   padding:10px 0;
-  background:#ccc;
+  background:#eee;
+  border-radius:4px;
   margin:15px;
   text-transform:uppercase;
   text-decoration:none;
 }
 
 .navMenu ul a.router-link-exact-active li {
-  background:rgb(211, 162, 208);
+  background:rgb(196, 218, 219);
 }
 
 .navMenu ul a {
@@ -141,7 +159,7 @@ p {
 }
 
 .navMenu a:visited {
-  color:rgb(128, 0, 117);
+  color:rgb(0, 116, 124);
   text-decoration:none;
 }
 
@@ -161,5 +179,28 @@ p {
 }
 
 /* Tablets and Up */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+.title{
+  margin: 0 0 0 20px;
+}
+
+.menuButton {
+    margin-right:25px;
+}
+
+h1 {
+  font-size:7.5vw;
+}
+
+h3 {
+  font-size:3vw;
+  font-weight:100;
+}
+
+.navMenu ul li {
+  font-size:4vw;
+  padding:20px 0;
+  border-radius:8px;
+}
+}
 </style>
