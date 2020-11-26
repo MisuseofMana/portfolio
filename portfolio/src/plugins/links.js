@@ -33,7 +33,7 @@ const comics = {
 
 const books = {
   pageName: 'Books',
-  description:[`I've dabbled in self publishing and produced two version of a book named "Dungeons of Amara." You can purchase the 2019 version of the book at the link below. The older version is discontinued with no plans to reprint.`],
+  description:[`I've dabbled in self publishing and produced two version of a book named "Dungeons of Amara." <a href="https://gumroad.com/l/CsdPh">You can purchase a digital or physical version of the 2019 edition on my Gumroad.</a> The older version is discontinued with no plans to reprint.`],
   links:[
     {
       title:"Dungeons Of Amara",
@@ -44,24 +44,15 @@ const books = {
       smallBackground:'smallDoaSplash',
       link:"https://gum.co/CsdPh",
     },
-    {
-      title:"SOMETHING",
-      category:"Publication",
-      description:['balsjkfdlajbflajsbflaskjbnf'],
-      cardAlt:"Digitaly drawn cartoony drawing of a swordsman chopping off a goblins head while a mage woman kicks another in the face, and an elven archer shoots another with a bow.",
-      background:"doaSplash",
-      smallBackground:'smallDoaSplash',
-      link:"https://gum.co/CsdPh",
-    },
   ]
 }
 
 const coding = {
   pageName: 'Coding',
-  description:[`I've dabble in self publishing and produced two version of a book titled "Dungeons of Amara." You can purchase the 2019 version of the book at the link below. The older version is discontinued with no plans to reprint.`],
+  description:[`I'm a web developer with a focus on front end UI/UX. I also am trained in SQL and Google Firebase.`, `Click on the Github image below to check out my codebases.`],
   links:[
     {
-      title:"My GitHub",
+      title:"@MisuseofMana GitHub",
       category:"Coding",
       description:[`My hobby GitHub, accessible to the public for forking, collaborating, and making connections.`],
       cardAlt:"An image depicting code for a web browser rpg game and the github logo, Octocat, a half octopus, half cat creature.",
@@ -80,7 +71,7 @@ const coding = {
 
 const podcasts = {
   pageName: 'Podcasts',
-  description:[`I'm also an half-hearted audiophile, there's only so much time in a day for me to create and produce high quality content, so this is my throwaway hobby and collaborative musing time with my friends, family, and podcasting pals.`, `My cohost on "Welcome to Amara" Andy, along with our audio editor <a href="https://www.fiverr.com/shifted_audio">Pedro</a> aid me in bringing to life the world of Amara. In contrast, I make garbage musings under the guise of "This is Nothing".`],
+  description:[`Among all my other trades, I'm a half-hearted audiophile, there's only so much time in a day for me to create and produce high quality content, so this is my throwaway hobby and collaborative musing time with my friends, family, and podcasting pals.`, `My cohost on "Welcome to Amara" Andy, along with our audio editor <a href="https://www.fiverr.com/shifted_audio">Pedro</a> aid me in bringing to life the world of Amara. In contrast, I make garbage musings under the guise of "This is Nothing".`],
   links:[
     {
       title:"Welcome To Amara",
@@ -136,7 +127,7 @@ const photography = {
     {
       title:"RickCrickCrick",
       category:"Photography",
-      description:[`A peek into another realm, where my life is a film of epic proportions, complete with captions and perilous adventure. There's more in the RickCrickCrick universe than meets the eye.`, `Are you paying attention?`],
+      description:[`A peek into another realm, where life is a film of epic proportions with captions and perilous adventure. There's more in the universe than meets the eye.`, `Are you paying attention?`],
       cardAlt:"An image depicting code for a web browser rpg game and the github logo, Octocat, a half octopus, half cat creature.",
       background:"rccSplash",
       smallBackground:'smallRccSplash',
