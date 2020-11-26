@@ -25,6 +25,7 @@ import 'vue-awesome/icons/hamburger'
 import 'vue-awesome/icons/arrow-circle-left'
 import 'vue-awesome/icons/arrow-circle-right'
 import 'vue-awesome/icons/link'
+import 'vue-awesome/icons/window-close'
 
 Vue.component('v-icon', Icon);
 
@@ -34,6 +35,7 @@ Vue.use(VueRouter);
 import Home from './components/HomePage.vue'
 import About from './components/AboutPage.vue'
 import Project from './components/ProjectTemplate.vue'
+import Resume from './components/ResumePage.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -44,6 +46,7 @@ const routes = [
   { path: '/podcasts', component: Project, props: { content:Links.podcasts} },
   { path: '/games', component: Project, props: { content:Links.games} },
   { path: '/photography', component: Project, props: { content:Links.photography} },
+  { path: '/resume', component: Resume },
 ]
 
 const router = new VueRouter({
