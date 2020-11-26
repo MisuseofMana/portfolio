@@ -1,6 +1,30 @@
 .fade-enter-active, .fade-leave-active {
-    transition: opacity .5s;
+    transition: opacity .2s;
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
+  }
+
+  .slide-enter-active, .slide-leave-active {
+    transition: .2s;
+  }
+  .slide-enter {
+    transform: translate(-100%, 0);
+  }
+  
+  .slide-leave-to{
+    transform: translate(100%, 0);
+  }
+
+  .growAppear-enter-active, .growAppear-leave-active {
+    transition: all .5s;
+  }
+  .growAppear-enter {
+    transform: translate(0, -100%) scale(.5, 0);
+    opacity:0;
+  }
+  
+  .growAppear-leave-to{
+    transform: translate(0%, -100%) scale(.5, 0);
+    opacity:0
   }
