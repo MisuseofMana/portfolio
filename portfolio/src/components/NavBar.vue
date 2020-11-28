@@ -1,5 +1,6 @@
 <template>
     <nav @click="toggleNav()" class="navHeader flexRow">
+      <section class="flexRow">
       <section class="title">
         <h1>SEAN YAGER</h1>
         <transition name="fade" mode="out-in">
@@ -9,6 +10,7 @@
 
       <section class="menuButton">
           <v-icon name="hamburger" scale="3"></v-icon>
+      </section>
       </section>
 
       <transition key="navigation" name="growAppear" mode="out-in">
@@ -100,6 +102,10 @@
   margin: 0 0 0 5px;
 }
 
+.title h3 {
+  min-width:150px;
+}
+
 .menuButton {
     display:flex;
     justify-content: flex-end;
@@ -182,6 +188,10 @@ p {
 @media (min-width: 768px) {
 .title{
   margin: 0 0 0 20px;
+}
+
+.title h3 {
+  min-width:200px;
 }
 
 .menuButton {
