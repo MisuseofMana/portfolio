@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     min-height:100vh;
     margin:0;
-    padding: 0px 0 20px 0;
+    padding: 0px 0px 0 0;
 }
 
 .hero {
@@ -20,7 +20,7 @@ body {
     width:85vw;
     margin:20px auto;
     text-align:center;
-    background:white;
+    background:rgba(255,255,255,.98);
     box-shadow: 1px 1px 4px black;
   }
 
@@ -213,7 +213,7 @@ li{
         background-repeat: no-repeat;
         min-height:100vh;
         margin:0;
-        padding: 0px 0 20px 0;
+        padding: 0px 0 0px 0;
     }
 
     .ifDesktop {
