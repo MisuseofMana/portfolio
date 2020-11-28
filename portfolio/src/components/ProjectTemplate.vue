@@ -2,9 +2,6 @@
     <div>
         <section class="hero">
             <h1 class="pageTitle">{{content.pageName}}</h1>
-        </section>
-
-        <section class="hero">
             <span class="pageDescription" v-for="(desc, index) in content.description" :key="desc[0]+index">
                 <p v-html="desc"></p>
             </span>
@@ -18,14 +15,20 @@
             </a>
         </section>
 
-        <section class="ifDesktop hero">
-            <section v-for="(item, index) in this.content.links" :key="item.title + index">
-                <h2 class="projectTitle">{{item.title}}</h2>
-                <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
-                <a class="projectImage" :key="item.title + 'img'" :class="{'notAllowed' : !item.link, 'allowed' : item.link}" :href="item.link" target="_blank" @click="checkLink(item.link)">
-                <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.png`)" :alt="item.cardalt">
-                </a>
+        <section class="cardBorder ifDesktop hero">
+            <section class="flexRowWrap">
+                <section class="projectWrapper" v-for="(project, index) in this.content.links" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.png`)})`}">   
+                <section class='projectOverlay flexColumn' :key="project.title">
+                    <h1>{{ project.title}}</h1>
+                    
+                    <section :key="project.title  + 'describe'" class="description">
+                        <p v-for="(sentences, index) in project.description" :key='sentences[0]+index'>{{ sentences }}</p>
+                    </section>
+
+                    <a v-if="project.link" :href="project.link" target="_blank" class="link">See More</a>
+                </section>
             </section>
+        </section>
         </section>
     </div>
 </template>
@@ -49,7 +52,7 @@
 
 <style>
 .cardBorder {
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .imageSize {
@@ -91,7 +94,7 @@
 /* Tablets and Up */
 @media (min-width: 768px) {
 .cardBorder {
-    margin-bottom:15px;
+    margin-bottom:0px;
 }
 
 .imageSize {
@@ -122,34 +125,97 @@
 }
 
 @media (min-width: 1024px) {
-    .cardBorder {
-        margin-bottom:15px;
-    }   
+.cardBorder {
+    margin-bottom:20px;
+}
 
-    .imageSize {
-        border-radius: 20px;
-        width:10%;
-        margin:0 auto;
-    }
+.pageTitle {
+    font-size:3vw;
+}
+.projectWrapper {
+    width:325px;
+    height:500px;
+    border-radius:20px;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows:1fr 3fr 1fr;
+    background-position: center;
+    background-size: cover;
+    box-shadow:3px 3px 3px 1px #ccc;
+    margin:30px 15px;
+    transition: box-shadow .3s;
+}
 
-    .pageTitle {
-        font-size:4vw;
-    }
+.projectWrapper:hover {
+    box-shadow:5px 5px 5px 1px #aaa;
+    transition: box-shadow .3s;
+}
 
-    .pageDescription {
-        font-size:2vw;
-    }
+.projectOverlay {
+    grid-column: 1/4;
+    grid-row:1/4;
+    border-radius:20px;
+    background:rgba(0, 116, 124, .9);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    opacity:0;
+    padding:10px;
+    transition: opacity .3s
+}
 
-    .projectTitle {
-        font-size:4vw;
-        margin:10px 0;
-        font-family: var(--h1-font);
-    }
+.projectWrapper:hover > .projectOverlay {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    opacity:1;
+    padding:10px;
+    transition: opacity .3s;
+}
 
-    .projectDescription{
-        font-size:2vw;
-        margin:10px 0;
-        text-align:center;
-    }
+.projectOverlay h1 {
+    font-size:2vw;
+    color:white;
+    margin:0px;
+    text-align: center;
+}
+
+.description {
+    grid-row:3/4;
+    grid-column:1/4;
+}
+
+.description p, p{
+    margin:10px;
+    font-size:1.2vw;
+    font-weight:100;
+    text-align:center;
+}
+
+.notAllowed {
+    cursor:not-allowed;
+}
+
+.allowed{
+    cursor:pointer;
+}
+
+.link {
+    font-family: var(--plain-font);
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    text-decoration:none;
+    height:40px;
+    border-radius:10px;
+    background:white;
+    color:black;
+    text-align:center;
+}
 }
 </style> 
