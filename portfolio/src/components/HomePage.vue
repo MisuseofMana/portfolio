@@ -7,8 +7,8 @@
       <hr class="ifMobile">
       <br class="ifDesktop">
 
-        <CardTemplateMobile class="ifMobile"/>
-        <CardTemplateDesktop class="ifDesktop"/>
+        <CardTemplateMobile/>
+        <CardTemplateDesktop/>
         
     </section>
 </template>
@@ -72,6 +72,7 @@ p{
   p {
     font-size:1.4vw;
     font-weight:100;
+    text-align:left;
   }
 }
 </style>
