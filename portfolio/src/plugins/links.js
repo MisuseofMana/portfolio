@@ -12,14 +12,6 @@ const comics = {
       link:"https://tapas.io/episode/793285",
     },
     {
-      title:"Psychic Psychic Cowboy",
-      category:"Comic",
-      description:['A tale about a double psychic cowboy.', 'Coming Soon'],
-      cardAlt:"A desert scene depicting the rising sun, which is distorted and giving off rainbow colors.",
-      background:"ppcSplash",
-      smallBackground:'smallPpcSplash',
-    },
-    {
       title:"Ire",
       category:"Comic",
       description:['A short comic illustrating a poem about overcoming ones own inner conflict.'],
@@ -27,7 +19,15 @@ const comics = {
       background:"ireSplash",
       smallBackground:'smallIreSplash',
       link:"https://gum.co/gXbKmf",
-    }
+    },
+    {
+      title:"Psychic Psychic Cowboy",
+      category:"Comic",
+      description:['A tale about a double psychic cowboy.', 'Arriving Mid 2021'],
+      cardAlt:"A desert scene depicting the rising sun, which is distorted and giving off rainbow colors.",
+      background:"ppcSplash",
+      smallBackground:'smallPpcSplash',
+    },
   ]
 };
 
