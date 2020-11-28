@@ -1,19 +1,20 @@
 <template>
-    <section class="cardTemplate flexRow">
-        <section class="projectWrapper" v-for="(project, index) in this.allProjects" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.png`)})`}"> 
+    <section class="cardTemplate ifDesktop">
+        <section class="flexRowWrap">
+            <section class="projectWrapper" v-for="(project, index) in this.allProjects" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.png`)})`}">   
+                <section class='projectOverlay flexColumn' :key="project.title">
+                    <h1>{{ project.title}}</h1>
+                    <p> {{ project.category}} </p>
                     
-            <section class='projectOverlay flexColumn' :key="project.title">
-                <h1>{{ project.title}}</h1>
-                <p> {{ project.category}} </p>
-                
-                <section :key="project.title  + 'describe'" class="description">
-                    <p v-for="(sentences, index) in project.description" :key='sentences[0]+index'>{{ sentences }}</p>
+                    <section :key="project.title  + 'describe'" class="description">
+                        <p v-for="(sentences, index) in project.description" :key='sentences[0]+index'>{{ sentences }}</p>
+                    </section>
+
+                    <a v-if="project.link" :href="project.link" target="_bla" class="link">See More</a>
                 </section>
             </section>
-            
-            
         </section>
-    </section>
+        </section>
 </template>
 
 <script>
@@ -77,12 +78,8 @@ import Links from '../plugins/links.js'
 </script>
 
 <style scoped>
-/* Mobile Styles */
 .cardTemplate {
     margin: 0 0 20px 0;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
 }
 
 .projectWrapper {
@@ -120,7 +117,6 @@ import Links from '../plugins/links.js'
 }
 
 .projectWrapper:hover > .projectOverlay {
-    cursor:pointer;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -149,22 +145,6 @@ h1 {
     text-align:center;
 }
 
-.projectImage {
-    grid-column:1/4;
-    grid-row:1/4;
-
-    width:300px;
-
-    margin-bottom:15px;
-
-}
-
-.projectImage img {
-    width:300px;
-}
-
-
-
 .notAllowed {
     cursor:not-allowed;
 }
@@ -173,5 +153,19 @@ h1 {
     cursor:pointer;
 }
 
+.link {
+    font-family: var(--plain-font);
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    text-decoration:none;
+    height:40px;
+    border-radius:10px;
+    background:white;
+    color:black;
+    text-align:center;
+}
 
 </style>
