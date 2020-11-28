@@ -7,12 +7,7 @@
             <h3 class="titleQuip" :key="randomTitle">{{randomTitle}}</h3>
           </transition>
 
-          <section class="socialMedia">
-              <a href="https://github.com/MisuseofMana"><img src="@/assets/imgs/icons/github.png" alt=""></a>
-              <a href="https://www.instagram.com/misuseofmana/"><img src="@/assets/imgs/icons/instagram.png" alt=""></a>
-              <a href="https://twitter.com/MisuseOfMana"><img src="@/assets/imgs/icons/twitter.png" alt=""></a>
-              <a href="https://www.linkedin.com/in/seanyager/"><img src="@/assets/imgs/icons/linkedin.png" alt=""></a>
-          </section>
+          <SocialMedia/>
       </section>
 
       <ul class="flexRow navHeader">
@@ -31,7 +26,12 @@
 </template>
 
 <script>
+  import SocialMedia from './SocialMedia.vue';
+
     export default {
+      components: {
+        SocialMedia,
+      },
       data() {
         return {
           navOpen: false,
@@ -74,13 +74,14 @@
 
 <style scoped>
 .navigation {
-  margin: 0 0 20px 0;
-  padding:0 0 20px 0;
+  margin: 0 0 15px 0;
+  padding:0px 0 15px 0;
   border-bottom:solid 2px black
 }
 
 .innerNavigation {
   width:90%;
+  max-width:1200px;
   margin:0 auto;
 }
 
@@ -150,7 +151,7 @@ ul li {
   text-transform:uppercase;
   text-decoration:none;
   font-size:1.2vw;
-  padding:15px;
+  padding:10px;
   font-weight:600;
   border-radius:8px;
 }
