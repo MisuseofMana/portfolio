@@ -1,5 +1,6 @@
 <template>
-    <section class="cardTemplate flexColumn">
+    <section class="cardTemplate ifMobile">
+        <section class="flexColumn">
             <transition name="fade" mode="out-in">
                 <section :key="this.allProjects[this.currentNumber].title">
                     <section class='title'>
@@ -11,13 +12,13 @@
 
             <section class="flexRow navRow">
                 <v-icon @click="backNavigation" name="arrow-circle-left" :scale="arrowSize"></v-icon>
-                
-                <transition name="fade" mode="out-in">
-                    <a :key="this.allProjects[this.currentNumber].title + 'img'" class="cardImage ifDesktop" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].background}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
-                </transition>
 
                 <transition name="fade" mode="out-in">
                     <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifMobile" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].smallBackground}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
+                </transition>
+                
+                <transition name="fade" mode="out-in">
+                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifDesktop" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].background}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
                 </transition>
 
                 <v-icon @click="forwardNavigation" name="arrow-circle-right" :scale="arrowSize"></v-icon>
@@ -28,6 +29,7 @@
                         <p v-for="(sentences, index) in allProjects[this.currentNumber].description" :key='sentences[0]+index'>{{ sentences }}</p>
                     </section>
             </transition>
+        </section>
     </section>
 </template>
 
