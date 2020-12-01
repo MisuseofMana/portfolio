@@ -14,7 +14,7 @@
                 <v-icon @click="backNavigation" name="arrow-circle-left" :scale="arrowSize"></v-icon>
 
                 <transition name="fade" mode="out-in">
-                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifMobile" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{background: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].smallBackground}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
+                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifMobile" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].smallBackground}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
                 </transition>
                 
                 <!-- <transition name="fade" mode="out-in">

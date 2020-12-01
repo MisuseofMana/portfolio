@@ -11,7 +11,7 @@
       </section>
 
       <ul class="flexRow navHeader">
-        <router-link to="/"><li>Home</li></router-link>
+        <router-link to="/" exact><li>Home</li></router-link>
         <router-link to="/about"><li>About</li></router-link>
         <router-link to="/comics"><li>Comics</li></router-link>
         <router-link to="/books"><li>Books</li></router-link>
