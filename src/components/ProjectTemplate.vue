@@ -11,7 +11,7 @@
             <h2 class="projectTitle">{{item.title}}</h2>
             <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
             <a class="projectImage" :key="item.title + 'img'" :class="{'notAllowed' : !item.link, 'allowed' : item.link}" :href="item.link" target="_blank" @click="checkLink(item.link)">
-                <img class="imageSize" :src="`./assets/imgs/` + item.background + `.png`" :alt="item.cardalt">
+                <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.png`)" :alt="item.cardalt">
             </a>
         </section>
 
