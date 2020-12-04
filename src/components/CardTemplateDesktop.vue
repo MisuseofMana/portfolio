@@ -59,7 +59,6 @@ import Links from '../plugins/links.js'
                     ...Links.games.links,
                     ...Links.photography.links
                 ]
-                console.log(allEntries)
                 return allEntries;
             },
             beforeNumber: function () {
