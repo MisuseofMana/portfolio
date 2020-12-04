@@ -3,7 +3,7 @@ module.exports = {
     outputDir: "docs",
     publicPath: '/docs/',
     indexPath:'index.html',
-    filenameHashing: false,
+    // filenameHashing: false,
     chainWebpack: (config) => {
         config.module
             .rule('txt')
