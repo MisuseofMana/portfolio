@@ -1,7 +1,7 @@
 module.exports = {
 	lintOnSave: false, 
     outputDir: "docs",
-    publicPath:'./',
+    publicPath:'',
     // indexPath:'index.html',
     // filenameHashing: false,
     chainWebpack: (config) => {
