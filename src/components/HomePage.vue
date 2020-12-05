@@ -14,8 +14,8 @@
 </template>
 
 <script>
-    import CardTemplateMobile from '@/components/CardTemplateMobile.vue'
-    import CardTemplateDesktop from '@/components/CardTemplateDesktop.vue'
+    import CardTemplateMobile from './CardTemplateMobile.vue'
+    import CardTemplateDesktop from './CardTemplateDesktop.vue'
     
     export default {
       data() {

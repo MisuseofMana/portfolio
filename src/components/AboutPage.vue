@@ -2,7 +2,7 @@
     <div class="hero">
         <section class="flexRowAbout">
     
-        <img class="imageFit" src="@/assets/imgs/propic.png" alt="">
+        <img class="imageFit" src="../assets/imgs/propic.png" alt="">
       
         <section>
             <h1>What's up!</h1>

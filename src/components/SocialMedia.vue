@@ -1,10 +1,10 @@
 <template>
     <section class="socialMedia flexRowEnd">
-        <a href="https://github.com/MisuseofMana" target="_blank"><img src="@/assets/imgs/icons/github.png" alt=""></a>
-        <a href="https://www.instagram.com/misuseofmana/" target="_blank"><img src="@/assets/imgs/icons/instagram.png" alt=""></a>
-        <a href="https://twitter.com/MisuseOfMana" target="_blank"><img src="@/assets/imgs/icons/twitter.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/seanyager/" target="_blank"><img src="@/assets/imgs/icons/linkedin.png" alt=""></a>
-        <a href="https://www.gumroad.com/misuseofmana" target="_blank"><img src="@/assets/imgs/icons/gumroad.png" alt=""></a>
+        <a href="https://github.com/MisuseofMana" target="_blank"><img src="../assets/imgs/icons/github.png" alt=""></a>
+        <a href="https://www.instagram.com/misuseofmana/" target="_blank"><img src="../assets/imgs/icons/instagram.png" alt=""></a>
+        <a href="https://twitter.com/MisuseOfMana" target="_blank"><img src="../assets/imgs/icons/twitter.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/seanyager/" target="_blank"><img src="../assets/imgs/icons/linkedin.png" alt=""></a>
+        <a href="https://www.gumroad.com/misuseofmana" target="_blank"><img src="../assets/imgs/icons/gumroad.png" alt=""></a>
     </section>
 </template>
 

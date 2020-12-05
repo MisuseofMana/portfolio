@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import '@/assets/styles/style.css'
-import '@/assets/styles/transitions.css'
+import './assets/styles/style.css'
+import './assets/styles/transitions.css'
 
-import NavBar from '@/components/NavBar.vue'
-import DesktopNavBar from '@/components/DesktopNavBar.vue'
+import NavBar from './components/NavBar.vue'
+import DesktopNavBar from './components/DesktopNavBar.vue'
 
-import LandingPage from '@/components/LandingPage.vue'
-import ResumePage from '@/components/ResumePage.vue'
+import LandingPage from './components/LandingPage.vue'
+import ResumePage from './components/ResumePage.vue'
 
 export default {
   name: 'App',
