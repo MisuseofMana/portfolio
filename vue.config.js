@@ -1,9 +1,9 @@
 module.exports = {
 	lintOnSave: false, 
     outputDir: "docs",
-    publicPath:'/docs/',
-    indexPath:'index.html',
-    filenameHashing: false,
+    publicPath:'./',
+    // indexPath:'index.html',
+    // filenameHashing: false,
     chainWebpack: (config) => {
         config.module
             .rule('txt')
