@@ -5,5 +5,6 @@ const app = express()
 
 app.use(history({
     disableDotRule: true,
-    verbose: true
+    verbose: true,
+    index: '/docs/index.html'
 }));
