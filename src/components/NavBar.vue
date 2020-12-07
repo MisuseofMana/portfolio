@@ -9,7 +9,7 @@
       </section>
 
       <section class="menuButton">
-          <v-icon name="hamburger" scale="3"></v-icon>
+          <v-icon name="hamburger" scale="1"></v-icon>
       </section>
       </section>
 

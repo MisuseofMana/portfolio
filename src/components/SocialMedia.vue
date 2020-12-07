@@ -1,5 +1,5 @@
 <template>
-    <section class="socialMedia flexRowEnd">
+    <section class="socialMedia">
         <a href="https://github.com/MisuseofMana" target="_blank"><img src="../assets/imgs/icons/github.png" alt=""></a>
         <a href="https://www.instagram.com/misuseofmana/" target="_blank"><img src="../assets/imgs/icons/instagram.png" alt=""></a>
         <a href="https://twitter.com/MisuseOfMana" target="_blank"><img src="../assets/imgs/icons/twitter.png" alt=""></a>
@@ -15,12 +15,28 @@
 </script>
 
 <style scoped>
+.socialMedia {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .socialMedia img {
-    width:50px;
+    width:30px;
     margin:10px;
 }
 
 @media (min-width: 768px) {
+    .socialMedia {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
     .socialMedia img {
         width:60px;
         margin:10px;

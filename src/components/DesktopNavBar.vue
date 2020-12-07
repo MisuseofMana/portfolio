@@ -81,7 +81,7 @@
 
 .innerNavigation {
   width:90%;
-  max-width:1200px;
+  max-width:1450px;
   margin:0 auto;
 }
 

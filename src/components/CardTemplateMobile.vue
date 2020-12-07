@@ -17,9 +17,9 @@
                     <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifMobile" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`../assets/imgs/${allProjects[this.currentNumber].smallBackground}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
                 </transition>
                 
-                <!-- <transition name="fade" mode="out-in">
-                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifDesktop" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{background: `url(${require(`../imgs/${allProjects[this.currentNumber].background}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
-                </transition> -->
+                <transition name="fade" mode="out-in">
+                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifDesktop" :class="{'notAllowed' : !allProjects[this.currentNumber].link, 'allowed' : allProjects[this.currentNumber].link}" :style="{backgroundImage: `url(${require(`../assets/imgs/${allProjects[this.currentNumber].background}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
+                </transition>
 
                 <v-icon @click="forwardNavigation" name="arrow-circle-right" :scale="arrowSize"></v-icon>
             </section>

@@ -30,9 +30,12 @@ import SocialMedia from './SocialMedia.vue'
 .imageFit {
     width:50%;
     padding:5px;
+    float:left;
 }
 
-
+h1 {
+    font-size:10vw;
+}
 
 /* Mobile Portrtait */
 @media (min-width: 500px) {

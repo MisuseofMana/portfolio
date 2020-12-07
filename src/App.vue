@@ -6,9 +6,7 @@
       <transition name="slide" mode="out-in">
         <router-view :key="$route.fullPath"></router-view>
       </transition>
-
-    <LandingPage v-if="false"/>
-    <ResumePage v-if="false"/>
+      
   </div>
 </template>
 
