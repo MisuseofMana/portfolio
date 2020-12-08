@@ -1,0 +1,20 @@
+{
+  "DesktopNavBar": {
+    "description": "Auto imported from components/DesktopNavBar.vue"
+  },
+  "LazyDesktopNavBar": {
+    "description": "Auto imported from components/DesktopNavBar.vue"
+  },
+  "NavBar": {
+    "description": "Auto imported from components/NavBar.vue"
+  },
+  "LazyNavBar": {
+    "description": "Auto imported from components/NavBar.vue"
+  },
+  "SocialMedia": {
+    "description": "Auto imported from components/SocialMedia.vue"
+  },
+  "LazySocialMedia": {
+    "description": "Auto imported from components/SocialMedia.vue"
+  }
+}
