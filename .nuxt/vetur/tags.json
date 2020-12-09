@@ -1,4 +1,16 @@
 {
+  "CardTemplateDesktop": {
+    "description": "Auto imported from components/CardTemplateDesktop.vue"
+  },
+  "LazyCardTemplateDesktop": {
+    "description": "Auto imported from components/CardTemplateDesktop.vue"
+  },
+  "CardTemplateMobile": {
+    "description": "Auto imported from components/CardTemplateMobile.vue"
+  },
+  "LazyCardTemplateMobile": {
+    "description": "Auto imported from components/CardTemplateMobile.vue"
+  },
   "DesktopNavBar": {
     "description": "Auto imported from components/DesktopNavBar.vue"
   },
