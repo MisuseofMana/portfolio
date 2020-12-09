@@ -9,7 +9,7 @@
       </section>
 
       <section class="menuButton">
-          <v-icon name="hamburger" scale="3"></v-icon>
+          <Icon name="hamburger" scale="3" />
       </section>
       </section>
 
@@ -21,7 +21,7 @@
               </section>
 
               <section class="menuButton">
-                <v-icon name="window-close" scale="3"></v-icon>
+                <Icon name="window-close" scale="3" />
               </section>
             </section>
           <ul>
