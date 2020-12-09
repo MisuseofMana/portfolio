@@ -7,19 +7,19 @@
       <hr class="ifMobile">
       <br class="ifDesktop">
 
-        <CardTemplateMobile />
-        <CardTemplateDesktop />
+        <CardTemplateMobile/>
+        <CardTemplateDesktop/>
         
     </section>
 </template>
 
-<script>   
-    export default {
-      data() {
-      return {
-      }
-    },
+<script>
+export default {
+    transition: {
+        name: 'slide',
+        mode: 'out-in'
     }
+}
 </script>
 
 <style scoped>

@@ -17,12 +17,6 @@
     </div>
 </template>
 
-<script>
-    export default {
-
-    }
-</script>
-
 <style scoped>
 .imageFit {
     width:50%;
