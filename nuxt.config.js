@@ -1,3 +1,8 @@
 export default {
-    components: true
+    components: true,
+    css: ['@/assets/styles/style.css', '@/assets/styles/transitions.css'],
+    build: {
+        transpile: [/vue-awesome/],
+    },
+    plugins: ['@/plugins/vue-awesome.js'],
   }
