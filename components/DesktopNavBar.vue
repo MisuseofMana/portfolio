@@ -11,15 +11,15 @@
       </section>
 
       <ul class="flexRow navHeader">
-        <router-link to="/" exact><li>Home</li></router-link>
-        <router-link to="/about"><li>About</li></router-link>
-        <router-link to="/comics"><li>Comics</li></router-link>
-        <router-link to="/books"><li>Books</li></router-link>
-        <router-link to="/coding"><li>Coding</li></router-link>
-        <router-link to="/podcasts"><li>Podcasts</li></router-link>
-        <router-link to="/games"><li>Games</li></router-link>
-        <router-link to="/photography"><li>Photography</li></router-link>
-        <router-link to="/resume"><li>Resume</li></router-link>
+        <NuxtLink to="/" exact><li>Home</li></NuxtLink>
+        <NuxtLink to="/about"><li>About</li></NuxtLink>
+        <NuxtLink to="projects/comics"><li>Comics</li></NuxtLink>
+        <NuxtLink to="projects/books"><li>Books</li></NuxtLink>
+        <NuxtLink to="projects/coding"><li>Coding</li></NuxtLink>
+        <NuxtLink to="projects/podcasts"><li>Podcasts</li></NuxtLink>
+        <NuxtLink to="projects/games"><li>Games</li></NuxtLink>
+        <NuxtLink to="projects/photography"><li>Photography</li></NuxtLink>
+        <NuxtLink to="/resume"><li>Resume</li></NuxtLink>
       </ul>
     </section>
   </nav>
@@ -81,7 +81,7 @@
 
 .innerNavigation {
   width:90%;
-  max-width:1200px;
+  max-width:1450px;
   margin:0 auto;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .title {
-  justify-content:flex-start;
+  justify-content:center;
   align-items:center;
   text-align:left;
   margin:0 0 20px 0px;
@@ -100,23 +100,11 @@
 
 .title h1 {
   padding:0 0 0 20px;
-  font-size:4vw;
+  font-size:3vw;
 }
 
 .titleQuip {
   min-width:200px;
-}
-
-.socialMedia {
-  margin-left:auto;
-}
-
-.socialMedia a {
-  margin:0 20px 0 0;
-}
-
-.socialMedia a:hover > img {
-  box-shadow:0px 0px 10px 2px rgb(0, 116, 124);
 }
 
 h3 {
@@ -150,22 +138,29 @@ ul li {
   text-align:center;
   text-transform:uppercase;
   text-decoration:none;
-  font-size:1.2vw;
+  font-size:1vw;
   padding:10px;
   font-weight:600;
   border-radius:8px;
 }
 
-ul a.router-link-exact-active li {
-  background:#eee;
+ul a.nuxt-link-exact-active li {
+  background:rgb(0, 116, 124);
+  color:white;
 }
 
-ul a.router-link-exact-active li:before {
+ul a.nuxt-link-exact-active li:before {
   content:">> "
 }
 
 ul a {
   text-decoration: none;
+}
+
+ul a:hover {
+  border-radius:8px;
+  background:rgb(0, 116, 124);
+  color:white;
 }
 
 a:link {
