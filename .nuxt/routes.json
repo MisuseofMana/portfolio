@@ -14,6 +14,13 @@
     "_name": "_16fd865c"
   },
   {
+    "name": "projects-projectTemplate",
+    "path": "/projects/:projectTemplate?",
+    "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\projects\\\\_projectTemplate.vue",
+    "chunkName": "pages/projects/_projectTemplate",
+    "_name": "_1209661d"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\index.vue",

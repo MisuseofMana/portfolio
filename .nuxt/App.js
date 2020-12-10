@@ -5,9 +5,19 @@ import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '..\\assets\\styles\\style.css'
+import '..\\assets\\styles\\importsAndVariables.css'
+
+import '..\\assets\\styles\\flexStyle.css'
 
 import '..\\assets\\styles\\transitions.css'
+
+import '..\\assets\\styles\\scrollBar.css'
+
+import '..\\assets\\styles\\defaultStyle.css'
+
+import '..\\assets\\styles\\tabletStyle.css'
+
+import '..\\assets\\styles\\desktopStyle.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'
 
