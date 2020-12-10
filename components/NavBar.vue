@@ -9,7 +9,7 @@
       </section>
 
       <section class="menuButton">
-          <Icon name="hamburger" scale="3" />
+          <Icon name="hamburger"/>
       </section>
       </section>
 
@@ -21,19 +21,19 @@
               </section>
 
               <section class="menuButton">
-                <Icon name="window-close" scale="3" />
+                <Icon name="window-close"/>
               </section>
             </section>
           <ul>
-            <router-link to="/" exact><li>Home</li></router-link>
-            <router-link to="/about"><li>About</li></router-link>
-            <router-link to="/comics"><li>Comics</li></router-link>
-            <router-link to="/books"><li>Books</li></router-link>
-            <router-link to="/coding"><li>Coding</li></router-link>
-            <router-link to="/podcasts"><li>Podcasts</li></router-link>
-            <router-link to="/games"><li>Games</li></router-link>
-            <router-link to="/photography"><li>Photography</li></router-link>
-            <router-link to="/resume"><li>Resume</li></router-link>
+            <NuxtLink to="/" exact><li>Home</li></NuxtLink>
+            <NuxtLink to="/about"><li>About</li></NuxtLink>
+            <NuxtLink to="projects/comics"><li>Comics</li></NuxtLink>
+            <NuxtLink to="projects/books"><li>Books</li></NuxtLink>
+            <NuxtLink to="projects/coding"><li>Coding</li></NuxtLink>
+            <NuxtLink to="projects/podcasts"><li>Podcasts</li></NuxtLink>
+            <NuxtLink to="projects/games"><li>Games</li></NuxtLink>
+            <NuxtLink to="projects/photography"><li>Photography</li></NuxtLink>
+            <NuxtLink to="/resume"><li>Resume</li></NuxtLink>
           </ul>
         </section>
       </transition>
@@ -137,6 +137,7 @@ p {
   box-shadow: 1px 1px 3px black;
   width:100%;
   z-index:9999;
+  height:100vh;
 }
 
 .navMenu ul li {
@@ -151,7 +152,7 @@ p {
   text-decoration:none;
 }
 
-.navMenu ul a.router-link-exact-active li {
+.navMenu ul a.nuxt-link-exact-active li {
   background:rgb(196, 218, 219);
 }
 
@@ -199,7 +200,7 @@ p {
 }
 
 h1 {
-  font-size:7.5vw;
+  font-size:7vw;
 }
 
 h3 {
