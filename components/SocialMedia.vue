@@ -32,7 +32,9 @@
     }
 
     .socialMedia a:hover > img {
-        box-shadow:0px 0px 10px 2px rgb(0, 116, 124);
+        box-shadow:0px 0px 10px 2px rgb(255, 139, 131);
+        background: rgb(255, 139, 131);
+        filter:invert();
     }
 }
 </style>
