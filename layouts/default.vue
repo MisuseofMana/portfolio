@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <section>
         <NavBar class="ifMobile"/>
         <DesktopNavBar class="ifDesktop"/>
         <Nuxt />
-    </div>
+    </section>
 </template>
