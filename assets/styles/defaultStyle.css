@@ -1,0 +1,89 @@
+.fa-icon {
+    width: auto;
+    height: 1em; 
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    background-image: url('../imgs/portfolio-stack-mobile.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    margin:0;
+    overflow-x:hidden;
+    padding: 0px 0px 0 0;
+}
+
+.hero {
+    padding:10px 20px;
+    width:85vw;
+    margin:20px auto;
+    text-align:center;
+    background:rgba(255,255,255,.98);
+    box-shadow: 1px 1px 4px black;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.reveal {
+    opacity:0;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.floatRight {
+    float:right;
+}
+
+h1 {
+    font-family: var(--h1-font);
+    color:var(--h1-color);
+    margin:10px;
+}
+
+h2, h3, h4, h5 {
+    font-family: var(--plain-font);
+    color:var(--h1-color);
+    margin:0;
+}
+
+p   {
+    font-family: var(--plain-font);
+    margin:10px;
+    font-weight:100;
+}
+
+ul {
+    font-family: var(--plain-font);
+    margin:10px 0;
+    padding:0 20px;
+    font-size:1em;
+    text-indent: 10px;
+}
+
+li{
+    font-family: var(--plain-font);
+}
+
+a {
+    font-family: var(--plain-font);
+}
+
+.ifDesktop {
+    display:none;
+}
+
+.ifMobile {
+    display:block;
+}

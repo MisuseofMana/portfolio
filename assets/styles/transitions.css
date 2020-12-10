@@ -6,15 +6,17 @@
   opacity: 0;
 }
 
-.slide-enter-active, .slide-leave-active {
-  transition: .2s;
+.page-enter-active, .page-leave-active {
+  transition: .3s;
 }
-.slide-enter {
-  transform: translate(-100%, 0);
+.page-enter {
+  transform: translate(-150%, 0);
+  opacity:1;
 }
 
-.slide-leave-to{
-  transform: translate(100%, 0);
+.page-leave-to{
+  transform: translate(150%, 0);
+  opacity:0;
 }
 
 .growAppear-enter-active, .growAppear-leave-active {
