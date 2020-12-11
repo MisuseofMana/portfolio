@@ -2,10 +2,12 @@
   <nav @click="toggleNav()" class="navigation navHeader flexRow">
     <section class="innerNavigation">
       <section class="flexRow title">
-        <h1>SEAN YAGER</h1>
-        <transition name="fade" mode="out-in">
-            <h3 class="titleQuip" :key="randomTitle">{{randomTitle}}</h3>
+        <section class="flexRowStart">
+          <h1>SEAN YAGER</h1>
+          <transition name="fade" mode="out-in">
+              <h3 class="titleQuip" :key="randomTitle">{{randomTitle}}</h3>
           </transition>
+        </section>
 
           <SocialMedia/>
       </section>
