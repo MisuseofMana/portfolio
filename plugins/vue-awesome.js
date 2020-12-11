@@ -17,10 +17,12 @@ import 'vue-awesome/icons/film'
 import 'vue-awesome/icons/microphone'
 import 'vue-awesome/icons/code'
 import 'vue-awesome/icons/people-carry'
-import 'vue-awesome/icons/hamburger'
+import 'vue-awesome/icons/caret-square-down'
 import 'vue-awesome/icons/arrow-circle-left'
 import 'vue-awesome/icons/arrow-circle-right'
 import 'vue-awesome/icons/link'
 import 'vue-awesome/icons/window-close'
+import 'vue-awesome/icons/book-reader'
+import 'vue-awesome/icons/gamepad'
 
 Vue.component('Icon', Icon)
