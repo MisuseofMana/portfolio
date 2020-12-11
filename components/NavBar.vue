@@ -1,6 +1,6 @@
 <template>
     <nav @click="toggleNav()" class="navHeader flexRow">
-      <section class="flexRow">
+      <section class="flexRowBetween">
       <section class="title">
         <h1>SEAN YAGER</h1>
         <transition name="fade" mode="out-in">
@@ -9,7 +9,7 @@
       </section>
 
       <section class="menuButton">
-          <Icon name="hamburger"/>
+          <Icon name="caret-square-down"/>
       </section>
       </section>
 
@@ -17,7 +17,7 @@
         <section v-if="navOpen" class="navMenu">
             <section class="navHeader flexRow">
               <section class="title">
-                <h1>NAVIGATION</h1>
+                <h1>> Choose Your Path</h1>
               </section>
 
               <section class="menuButton">
@@ -88,6 +88,7 @@
   background:white;
   position: sticky;
   width:100%;
+  min-width:100%;
   top:0;
   justify-content:space-between;
   z-index:9999;
@@ -106,16 +107,8 @@
   min-width:150px;
 }
 
-.menuButton {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right:13px;
-}
-
 h1 {
   font-size:7vw;
-  margin:0 0 0 10px;
   padding:10px 0;
 }
 
@@ -133,8 +126,8 @@ p {
   position:absolute;
   top:0;
   left:0;
-  background:white;
   box-shadow: 1px 1px 3px black;
+  background-color:rgba(255,255,255,.8);
   width:100%;
   z-index:9999;
   height:100vh;
@@ -145,9 +138,11 @@ p {
   list-style: none;
   text-align:center;
   padding:10px 0;
-  background:#eee;
+  background:white;
   border-radius:4px;
-  margin:15px;
+  box-shadow:1px 1px 1px 1px #ccc;
+  margin:30px 15px;
+  font-size:7vw;
   text-transform:uppercase;
   text-decoration:none;
 }
@@ -178,13 +173,6 @@ p {
   content:" :";
 }
 
-
-
-/* Mobile Port */
-@media (min-width: 500px) {
-
-}
-
 /* Tablets and Up */
 @media (min-width: 768px) {
 .title{
@@ -209,7 +197,7 @@ h3 {
 }
 
 .navMenu ul li {
-  font-size:4vw;
+  font-size:7vw;
   padding:20px 0;
   border-radius:8px;
 }
