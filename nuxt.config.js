@@ -14,4 +14,7 @@ export default {
         transpile: [/vue-awesome/],
     },
     plugins: ['@/plugins/vue-awesome.js'],
+    link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      ]
   }
