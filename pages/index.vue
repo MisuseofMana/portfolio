@@ -13,15 +13,6 @@
     </section>
 </template>
 
-<script>
-export default {
-    transition: {
-        name: 'slide',
-        mode: 'out-in'
-    }
-}
-</script>
-
 <style scoped>
 h1 {
   font-size:12vw;
