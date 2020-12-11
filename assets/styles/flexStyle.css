@@ -21,6 +21,15 @@
     flex-wrap:wrap;
 }
 
+.flexRowBetween {
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
 .flexRowCenter {
     display:flex;
     flex-direction: row;

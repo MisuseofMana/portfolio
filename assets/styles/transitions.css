@@ -6,28 +6,31 @@
   opacity: 0;
 }
 
+
 .page-enter-active, .page-leave-active {
-  transition: .3s;
+  transition: .3s ease-in-out;
 }
 .page-enter {
-  transform: translate(-150%, 0);
+  transform: translate(-100%, 0);
   opacity:1;
 }
 
 .page-leave-to{
-  transform: translate(150%, 0);
+  transform: translate(100%, 0);
   opacity:0;
 }
 
+
+
 .growAppear-enter-active, .growAppear-leave-active {
-  transition: all .5s;
+  transition: all .5s ease-in-out;
 }
 .growAppear-enter {
-  transform: translate(0, -100%) scale(.5, 0);
+  transform: translate(0, -100%) scale(.8, 0);
   opacity:0;
 }
 
 .growAppear-leave-to{
-  transform: translate(0%, -100%) scale(.5, 0);
+  transform: translate(0%, -100%) scale(.8, 0);
   opacity:0
 }

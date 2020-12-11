@@ -1,5 +1,9 @@
 /* Tablet and Up */
 @media (min-width: 768px) {
+    .fa-icon {
+        height: 6vw; 
+    }
+
     .ifDesktop {
         display:none;
     }
