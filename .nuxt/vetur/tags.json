@@ -17,12 +17,6 @@
   "LazyDesktopNavBar": {
     "description": "Auto imported from components/DesktopNavBar.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer.vue"
-  },
-  "LazyFooter": {
-    "description": "Auto imported from components/Footer.vue"
-  },
   "NavBar": {
     "description": "Auto imported from components/NavBar.vue"
   },
@@ -34,6 +28,12 @@
   },
   "LazySocialMedia": {
     "description": "Auto imported from components/SocialMedia.vue"
+  },
+  "TheFooter": {
+    "description": "Auto imported from components/TheFooter.vue"
+  },
+  "LazyTheFooter": {
+    "description": "Auto imported from components/TheFooter.vue"
   },
   "ResumeBlock": {
     "description": "Auto imported from components/resume/ResumeBlock.vue"

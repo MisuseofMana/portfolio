@@ -19,6 +19,8 @@ import '..\\assets\\styles\\tabletStyle.css'
 
 import '..\\assets\\styles\\desktopStyle.css'
 
+import '..\\assets\\styles\\fontStyles.css'
+
 import _6f6c098b from '..\\layouts\\default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
