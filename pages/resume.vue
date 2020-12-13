@@ -38,26 +38,40 @@
             </section>
 
             <section class="skills">
-              <h1>Skills</h1>  
-                <section class="flexRowWrap">
-                  <ResumeChip iconName="keyboard" skill="Mac &amp; Windows OSX" />
-                  <ResumeChip iconName="file-code" skill="HTML 5"/>
-                  <ResumeChip iconName="code" skill="CSS 3"/>
-                  <ResumeChip iconName="laptop-code" skill="Javascript ES6"/>
-                  <ResumeChip iconName="cubes" skill="Visual Studio Code"/>
-                  <ResumeChip iconName="code-branch" skill="Github"/>
-                  <ResumeChip iconName="people-carry" skill="NPM"/>
-                  <ResumeChip iconName="cubes" skill="Vue JS"/>
-                  <ResumeChip iconName="cubes" skill="React JS"/>
-                  <ResumeChip iconName="cubes" skill="Nuxt JS"/>
-                  <ResumeChip iconName="fire-alt" skill="Google Firebase"/>
-                  <ResumeChip iconName="database" skill="SQL"/>
-                  <ResumeChip iconName="camera" skill="Adobe Photoshop"/>
-                  <ResumeChip iconName="bezier-curve" skill="Adobe Illustrator"/>
-                  <ResumeChip iconName="edit" skill="Adobe InDesign"/>
-                  <ResumeChip iconName="film" skill="Adobe Premier"/>
-                  <ResumeChip iconName="microphone" skill="Adobe Audition"/>
-                </section>
+              <h1>Skills</h1>
+
+              <h2><Icon name="desktop"/> Operating Systems</h2>
+              <section class="flexRowWrap">
+                <ResumeChip iconName="keyboard" skill="Mac OS" />
+                <ResumeChip iconName="desktop" skill="Windows OS" />
+              </section>
+              <br>
+              <h2><Icon name="code"/> Coding</h2>
+              <section class="flexRowWrap">
+                <ResumeChip iconName="file-code" skill="HTML 5"/>
+                <ResumeChip iconName="code" skill="CSS 3"/>
+                <ResumeChip iconName="laptop-code" skill="Javascript ES6"/>
+                <ResumeChip iconName="cubes" skill="Visual Studio Code"/>
+                <ResumeChip iconName="code-branch" skill="Github"/>
+                <ResumeChip iconName="people-carry" skill="NPM"/>
+                <ResumeChip iconName="cubes" skill="Vue JS"/>
+                <ResumeChip iconName="cubes" skill="React JS"/>
+                <ResumeChip iconName="cubes" skill="Nuxt JS"/>
+                <ResumeChip iconName="fire-alt" skill="Google Firebase"/>
+                <ResumeChip iconName="database" skill="SQL"/>
+              </section>
+              <br>
+              <h2><Icon name="swatchbook"/> Design</h2>
+              <section class="flexRowWrap">
+                  <ResumeChip iconName="palette" skill="Procreate"/>
+                  <ResumeChip iconName="search-plus" skill="Photoshop"/>
+                  <ResumeChip iconName="bezier-curve" skill="Illustrator"/>
+                  <ResumeChip iconName="edit" skill="InDesign"/>
+                  <ResumeChip iconName="film" skill="Premier"/>
+                  <ResumeChip iconName="microphone" skill="Audition"/>
+                  <ResumeChip iconName="camera-retro" skill="Photography"/>
+                  <ResumeChip iconName="blender" skill="Blender"/>
+              </section>
             </section>
                           
             <section class="education">
@@ -143,6 +157,10 @@ export default {
 
 
 <style scoped>
+.resumePage {
+  margin-bottom:20px;
+}
+
 .resume {
   display:grid;
   grid-template-columns: auto;
@@ -160,6 +178,14 @@ export default {
 header, .skills, .experience, .education, .personal {
   padding:10px;
 }
+
+header h1, header h2, header h3 {
+    text-align:center;
+  }
+
+  h1, h2, h3 {
+    text-align:left;
+  }
 
 header {
   display:flex;
@@ -211,22 +237,6 @@ header {
 
   h1, h2, h3 {
     text-align:left;
-  }
-
-  h1 {
-    font-size:3vw;
-  }
-
-  h2 {
-    font-size:2vw;
-  }
-
-  h3 {
-    font-size:1.2vw;
-  }
-
-  p {
-
   }
 }
 

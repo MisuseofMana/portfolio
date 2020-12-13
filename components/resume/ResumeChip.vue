@@ -21,8 +21,4 @@
   color:black;
   box-shadow: 2px 2px 1px rgb(206, 206, 206);
 }
-
-.fa-icon {
-    font-size:20px;
-}
 </style>

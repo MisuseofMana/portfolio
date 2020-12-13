@@ -3,12 +3,12 @@
         <section class="hero">
 
             <h1 class="pageTitle">{{content.pageName}}</h1>
-            <span class="pageDescription" v-for="(desc, index) in content.description" :key="desc[0]+index">
+            <section class="pageDescription" v-for="(desc, index) in content.description" :key="desc[0]+index">
                 <p v-html="desc"></p>
-            </span>
+            </section>
         </section>
 
-        <section class="cardBorder hero ifMobile" v-for="(item, index) in this.content.links" :key="item.title + index">
+        <section class="cardBorder flexColumnCenter hero ifMobile" v-for="(item, index) in this.content.links" :key="item.title + index">
             <h2 class="projectTitle">{{item.title}}</h2>
             <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
             <a class="projectImage" :key="item.title + 'img'" :class="{'notAllowed' : !item.link, 'allowed' : item.link}" :href="item.link" target="_blank" @click="checkLink(item.link)">
@@ -69,40 +69,18 @@ import Links from '@/plugins/links.js'
     margin-bottom:10px;
 }
 
-.imageSize {
-    border-radius: 20px;
-    width:90%;
+.projectImage {
+    display:block;
+    margin:30px;
+}
+
+.projectImage img {
     margin:0 auto;
 }
 
-.pageTitle {
-    font-size:8vw;
-}
-
-.pageDescription {
-    font-size:5vw;
-}
-
-.projectTitle {
-    font-size:9vw;
-    margin:10px 0;
-    font-family: var(--h1-font);
-}
-
-.projectDescription{
-    font-size:4vw;
-    margin:10px 0;
-    text-align:center;
-}
-
-.projectImage {
-    display:block;
-    margin: 0 0 40px 0;
-}
-
-/* Mobile Portrait */
-@media (min-width: 500px) {
-
+.imageSize {
+    border-radius: 20px;
+    width:100%;
 }
 
 /* Tablets and Up */
@@ -113,28 +91,7 @@ import Links from '@/plugins/links.js'
 
 .imageSize {
     border-radius: 20px;
-    width:90%;
     margin:0 auto;
-}
-
-.pageTitle {
-    font-size:8vw;
-}
-
-.pageDescription {
-    font-size:3vw;
-}
-
-.projectTitle {
-    font-size:9vw;
-    margin:10px 0;
-    font-family: var(--h1-font);
-}
-
-.projectDescription{
-    font-size:3vw;
-    margin:10px 0;
-    text-align:center;
 }
 }
 
@@ -143,9 +100,6 @@ import Links from '@/plugins/links.js'
     margin-bottom:20px;
 }
 
-.pageTitle {
-    font-size:3vw;
-}
 .projectWrapper {
     width:325px;
     height:500px;
@@ -191,7 +145,6 @@ import Links from '@/plugins/links.js'
 }
 
 .projectOverlay h1 {
-    font-size:2vw;
     color:white;
     margin:0px;
     text-align: center;
@@ -200,13 +153,6 @@ import Links from '@/plugins/links.js'
 .description {
     grid-row:3/4;
     grid-column:1/4;
-}
-
-.description p, p{
-    margin:10px;
-    font-size:1.2vw;
-    font-weight:100;
-    text-align:center;
 }
 
 .notAllowed {

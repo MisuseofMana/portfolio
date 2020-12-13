@@ -1,0 +1,67 @@
+.thinFont {
+    font-weight: 400;
+}
+
+.fa-icon {
+    font-size:2vw;
+}
+
+h1, h2, h3, h4, h5  {
+    font-family: var(--h1-font);
+    color:var(--font-color);
+    font-weight:700;
+}
+
+h1 { font-size:6.5vw; }
+
+h2 { font-size: 3.5vw; }
+
+h3 { font-size: 3vw; }
+
+h4 { font-size: 2.5vw; }
+
+h5 { font-size: 2vw; }
+
+p { 
+    font-family: var(--plain-font);
+    color: var(--font-color);
+    font-size: 1.5vw; 
+    font-weight:400;
+}
+
+ul {
+    font-family: var(--plain-font);
+    margin:10px 0;
+    padding:0 20px;
+    text-indent: 10px;
+}
+
+li{
+    font-family: var(--plain-font);
+    font-size: 1.5vw;
+}
+
+a, a:link {
+    font-family: var(--plain-font);
+    text-decoration:none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

@@ -10,8 +10,8 @@
 
 <style scoped>
 .socialMedia img {
-    width:50px;
-    margin:10px;
+    width:100px;
+    margin:20px;
 }
 
 @media (min-width: 768px) {
@@ -37,4 +37,8 @@
         filter:invert();
     }
 }
+
+
+
+
 </style>

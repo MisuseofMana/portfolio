@@ -23,12 +23,12 @@ body {
 }
 
 .hero {
-    padding:10px 20px;
     width:85vw;
     margin:20px auto;
-    text-align:center;
+    padding:50px;
     background:rgba(255,255,255,.98);
     box-shadow: 1px 1px 4px black;
+    max-width:1400px;
 }
 
 hr {
@@ -47,39 +47,7 @@ hr {
     float:right;
 }
 
-h1 {
-    font-family: var(--h1-font);
-    color:var(--h1-color);
-    margin:10px;
-}
 
-h2, h3, h4, h5 {
-    font-family: var(--plain-font);
-    color:var(--h1-color);
-    margin:0;
-}
-
-p   {
-    font-family: var(--plain-font);
-    margin:10px;
-    font-weight:100;
-}
-
-ul {
-    font-family: var(--plain-font);
-    margin:10px 0;
-    padding:0 20px;
-    font-size:1em;
-    text-indent: 10px;
-}
-
-li{
-    font-family: var(--plain-font);
-}
-
-a {
-    font-family: var(--plain-font);
-}
 
 .ifDesktop {
     display:none;

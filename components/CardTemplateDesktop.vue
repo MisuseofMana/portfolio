@@ -126,9 +126,6 @@ import Links from '@/plugins/links.js'
 }
 
 h1 {
-    font-size:2vw;
-    color:white;
-    margin:0px;
     text-align: center;
 }
 
@@ -138,9 +135,6 @@ h1 {
 }
 
 .description p, p{
-    margin:10px;
-    font-size:1.4vw;
-    font-weight:100;
     text-align:center;
 }
 

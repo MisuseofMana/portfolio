@@ -1,4 +1,11 @@
 @media (min-width: 1024px) {
+    p {
+        line-height:2vw;
+    }
+    .fa-icon {
+        height: 1.5vw; 
+    }
+
     body {
         background-image: url('../imgs/portfolio-stack.png');
         background-position: center;

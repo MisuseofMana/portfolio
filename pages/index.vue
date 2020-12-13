@@ -15,48 +15,6 @@
 
 <style scoped>
 h1 {
-  font-size:12vw;
   text-align:left;
-}
-
-p{
-  font-size:6vw;
-};
-
-
-/* Mobile Port */
-@media (min-width: 500px) {
-/* h1 {
-  font-size:10vw;
-}
-
-p{
-  font-size:6vw;
-}; */
-
-}
-
-/* Tablets and Up */
-@media (min-width: 768px) {
-  h1  {
-    font-size:5vw;
-    text-align:left;
-  }
-  
-  p {
-    font-weight:100;
-    font-size:2.3vw;
-  }
-}
-
-@media (min-width: 1024px) {
-  h1 {
-    font-size:3vw;
-  }
-  p {
-    font-size:1.4vw;
-    font-weight:100;
-    text-align:left;
-  }
 }
 </style>

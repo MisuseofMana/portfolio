@@ -1,7 +1,7 @@
 <template>
   <nav @click="toggleNav()" class="navigation navHeader flexRow">
     <section class="innerNavigation">
-      <section class="flexRow title">
+      <section class="flexRowBetween title">
         <section class="flexRowStart">
           <h1>SEAN YAGER</h1>
           <transition name="fade" mode="out-in">
@@ -93,28 +93,15 @@
 }
 
 .title {
-  justify-content:center;
-  align-items:center;
   text-align:left;
   margin:0 0 20px 0px;
   padding:10px 0 0 0;
-}
-
-.title h1 {
-  padding:0 0 0 20px;
-  font-size:3vw;
 }
 
 .titleQuip {
   min-width:200px;
 }
 
-h3 {
-  font-size:2vw;
-  margin:0 0 0 10px;
-
-  font-weight:100;
-}
 
 p {
   margin:0 10px 0 0;
@@ -140,14 +127,11 @@ ul li {
   text-align:center;
   text-transform:uppercase;
   text-decoration:none;
-  font-size:1vw;
-  padding:10px;
-  font-weight:600;
   border-radius:8px;
 }
 
 ul a.nuxt-link-exact-active li {
-  background:rgb(0, 116, 124);
+  background-color:var(--primary-color);
   color:white;
 }
 
@@ -157,12 +141,14 @@ ul a.nuxt-link-exact-active li:before {
 
 ul a {
   text-decoration: none;
+  transition: all .3s ease-in-out;
 }
 
 ul a:hover {
   border-radius:8px;
-  background:rgb(0, 116, 124);
+  background-color:var(--primary-color);
   color:white;
+  transition: all .3s ease-in-out;
 }
 
 a:link {
@@ -171,7 +157,7 @@ a:link {
 }
 
 a:visited {
-  color:rgb(0, 116, 124);
+  color:var(--primary-color);
   text-decoration:none;
 }
 </style>

@@ -1,43 +1,40 @@
 <template>
-    <nav @click="toggleNav()" class="navHeader flexRow">
-      <section class="flexRowBetween">
-      <section class="title">
-        <h1>SEAN YAGER</h1>
-        <transition name="fade" mode="out-in">
-          <h3 :key="randomTitle">{{randomTitle}}</h3>
-        </transition>
-      </section>
-
-      <section class="menuButton">
-          <Icon name="caret-square-down"/>
-      </section>
-      </section>
-
-      <transition key="navigation" name="growAppear" mode="out-in">
-        <section v-if="navOpen" class="navMenu">
-            <section class="navHeader flexRow">
-              <section class="title">
-                <h1>> Choose Your Path</h1>
-              </section>
-
-              <section class="menuButton">
-                <Icon name="window-close"/>
-              </section>
+  <nav @click="toggleNav()">
+      <section class="navHeader">
+          <section class="flexRowBetween" key="header" >
+            <section class="title">
+              <h1>SEAN YAGER</h1>
+              <transition name="fade" mode="out-in">
+                <h2 class="thinFont" :key="randomTitle">{{randomTitle}}</h2>
+              </transition>
             </section>
-          <ul>
-            <NuxtLink to="/" exact><li>Home</li></NuxtLink>
-            <NuxtLink to="/about"><li>About</li></NuxtLink>
-            <NuxtLink to="projects/comics"><li>Comics</li></NuxtLink>
-            <NuxtLink to="projects/books"><li>Books</li></NuxtLink>
-            <NuxtLink to="projects/coding"><li>Coding</li></NuxtLink>
-            <NuxtLink to="projects/podcasts"><li>Podcasts</li></NuxtLink>
-            <NuxtLink to="projects/games"><li>Games</li></NuxtLink>
-            <NuxtLink to="projects/photography"><li>Photography</li></NuxtLink>
-            <NuxtLink to="/resume"><li>Resume</li></NuxtLink>
-          </ul>
+            <Icon name="caret-square-down"/>
+          </section>
+      </section>
+
+      <transition name="growAppear" mode="out-in">
+        <section v-if="navOpen" key="navigation" class="menuContainer" >
+          <section class="flexRowBetween">
+              <section class="title">
+                <h1>NAVIGATION</h1>
+              </section>
+              <Icon name="window-close"/>
+            </section>
+
+          <section class="flexColumn">
+            <NuxtLink to="/" exact><p>Home</p></NuxtLink>
+            <NuxtLink to="/about"><p>About</p></NuxtLink>
+            <NuxtLink to="projects/comics"><p>Comics</p></NuxtLink>
+            <NuxtLink to="projects/books"><p>Books</p></NuxtLink>
+            <NuxtLink to="projects/coding"><p>Coding</p></NuxtLink>
+            <NuxtLink to="projects/podcasts"><p>Podcasts</p></NuxtLink>
+            <NuxtLink to="projects/games"><p>Games</p></NuxtLink>
+            <NuxtLink to="projects/photography"><p>Photography</p></NuxtLink>
+            <NuxtLink to="/resume"><p>Resume</p></NuxtLink>
+          </section>
         </section>
       </transition>
-    </nav>
+  </nav>
 </template>
 
 <script>
@@ -83,123 +80,64 @@
 </script>
 
 <style scoped>
-.navHeader{
-  border-bottom:1px solid black;
-  background:white;
+nav {
+  padding:0 20px;
+  background-color:white;
+  border-bottom:2px solid black;
   position: sticky;
-  width:100%;
-  min-width:100%;
   top:0;
-  justify-content:space-between;
-  z-index:9999;
-  padding:5px 0;
-  margin:0 0 10px 0;
+  z-index:0;
 }
 
-.title{
+.navHeader {
+  
+}
+
+.navHeaderOpen{
+  background-color:rgba(255,255,255);
+  position: sticky;
+  width: 100vw;
+  top:0;
+  left:0;
+  z-index:9999;
+  padding:0px 20px;
+}
+
+.title {
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  margin: 0 0 0 5px;
 }
 
-.title h3 {
-  min-width:150px;
+.title h2 {
+  margin-left:20px;
 }
 
-h1 {
-  font-size:7vw;
-  padding:10px 0;
-}
-
-h3 {
-  font-size:4vw;
-  margin:0 0 0 10px;
-}
-
-p {
-  margin:0 10px 0 0;
-  padding:0;
-}
-
-.navMenu {
+.menuContainer {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 1px 1px 3px black;
-  background-color:rgba(255,255,255,.8);
-  width:100%;
-  z-index:9999;
-  height:100vh;
-}
+  width:100vw;
 
-.navMenu ul li {
-  font-family: var(--plain-font);
-  list-style: none;
-  text-align:center;
-  padding:10px 0;
   background:white;
-  border-radius:4px;
-  box-shadow:1px 1px 1px 1px #ccc;
-  margin:30px 15px;
-  font-size:7vw;
-  text-transform:uppercase;
-  text-decoration:none;
 }
 
-.navMenu ul a.nuxt-link-exact-active li {
+.menuContainer ul a.nuxt-link-exact-active li {
   background:rgb(196, 218, 219);
 }
 
-.navMenu ul a {
-  text-decoration: none;
-}
-
-.navMenu a:link {
+.menuContainer a:link {
   color:rgb(0, 0, 0);
-  text-decoration:none;
 }
 
-.navMenu a:visited {
-  color:rgb(0, 116, 124);
-  text-decoration:none;
+.menuContainer a:visited {
+  color: var(--primary-color);
 }
 
-.navMenu ul li:before {
+.menuContainer ul li:before {
   content:": ";
 }
-
-.navMenu ul li:after {
+.menuContainer ul li:after {
   content:" :";
-}
-
-/* Tablets and Up */
-@media (min-width: 768px) {
-.title{
-  margin: 0 0 0 20px;
-}
-
-.title h3 {
-  min-width:200px;
-}
-
-.menuButton {
-    margin-right:25px;
-}
-
-h1 {
-  font-size:7vw;
-}
-
-h3 {
-  font-size:3vw;
-  font-weight:100;
-}
-
-.navMenu ul li {
-  font-size:7vw;
-  padding:20px 0;
-  border-radius:8px;
-}
 }
 </style>

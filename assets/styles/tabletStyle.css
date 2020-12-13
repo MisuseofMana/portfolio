@@ -1,5 +1,8 @@
 /* Tablet and Up */
 @media (min-width: 768px) {
+    p {
+        line-height:3vw;
+    }
     .fa-icon {
         height: 6vw; 
     }

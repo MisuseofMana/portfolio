@@ -3,6 +3,7 @@ import Icon from 'vue-awesome/components/Icon.vue'
 import 'vue-awesome/icons'
 
 import 'vue-awesome/icons/keyboard'
+import 'vue-awesome/icons/desktop'
 import 'vue-awesome/icons/file-code'
 import 'vue-awesome/icons/laptop-code'
 import 'vue-awesome/icons/filter'
@@ -24,5 +25,10 @@ import 'vue-awesome/icons/link'
 import 'vue-awesome/icons/window-close'
 import 'vue-awesome/icons/book-reader'
 import 'vue-awesome/icons/gamepad'
+import 'vue-awesome/icons/swatchbook'
+import 'vue-awesome/icons/camera-retro'
+import 'vue-awesome/icons/search-plus'
+import 'vue-awesome/icons/palette'
+import 'vue-awesome/icons/blender'
 
 Vue.component('Icon', Icon)

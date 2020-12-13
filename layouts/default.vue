@@ -1,7 +1,14 @@
 <template>
-    <span>
+    <div class="fullSite">
         <NavBar class="ifMobile"/>
         <DesktopNavBar class="ifDesktop"/>
         <Nuxt />
-    </span>
+        <TheFooter />
+    </div>
 </template>
+
+<style>
+    .fullSite {
+        width:100vw;
+    }
+</style>
