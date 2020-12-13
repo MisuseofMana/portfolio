@@ -8,6 +8,7 @@ export default {
         '@/assets/styles/defaultStyle.css', 
         '@/assets/styles/tabletStyle.css',
         '@/assets/styles/desktopStyle.css',
+        '@/assets/styles/fontStyles.css',
 
     ],
     build: {
