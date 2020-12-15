@@ -1,8 +1,9 @@
 <template>
-    <div class="hero">
-        <h1>404</h1>
-        <p>Sorry! Something went wrong here, this page couldn't be found.</p>
+    <div class="hero flexColumn">
+        <h1>Oops! Error 404</h1>
+        <h2>Not Found</h2>
         <img :src="`${require(`@/assets/imgs/${randomNumber}.png`)}`" alt="">
+        <p>Sorry! Something went wrong here, this page couldn't be found.</p>
     </div>
 </template>
 
@@ -21,6 +22,10 @@ export default {
 
 <style scoped>
 img {
-    width:400px;
+    width:300px;
+}
+
+.hero {
+    text-align:center;
 }
 </style>
