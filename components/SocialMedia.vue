@@ -1,5 +1,5 @@
 <template>
-    <section class="socialMedia flexRowEnd">
+    <section class="socialMedia flexRowWrap">
         <a href="https://github.com/MisuseofMana" target="_blank"><img src="../assets/imgs/icons/github.png" alt=""></a>
         <a href="https://www.instagram.com/misuseofmana/" target="_blank"><img src="../assets/imgs/icons/instagram.png" alt=""></a>
         <a href="https://twitter.com/MisuseOfMana" target="_blank"><img src="../assets/imgs/icons/twitter.png" alt=""></a>
@@ -10,13 +10,13 @@
 
 <style scoped>
 .socialMedia img {
-    width:100px;
-    margin:20px;
+    width:50px;
+    margin:10px;
 }
 
 @media (min-width: 768px) {
     .socialMedia img {
-        width:60px;
+        width:50px;
         margin:10px;
     }
 }
