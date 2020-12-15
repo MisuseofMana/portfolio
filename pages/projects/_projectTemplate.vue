@@ -1,19 +1,30 @@
 <template>
     <div class="container">
         <section class="hero">
-
-            <h1 class="pageTitle">{{content.pageName}}</h1>
-            <section class="pageDescription" v-for="(desc, index) in content.description" :key="desc[0]+index">
-                <p v-html="desc"></p>
+            <section class="heroPadding">
+                <h1 class="pageTitle">{{content.pageName}}</h1>
+                <section class="pageDescription" v-for="(desc, index) in content.description" :key="desc[0]+index">
+                    <p v-html="desc"></p>
+                </section>
             </section>
         </section>
 
         <section class="cardBorder flexColumnCenter hero ifMobile" v-for="(item, index) in this.content.links" :key="item.title + index">
-            <h2 class="projectTitle">{{item.title}}</h2>
-            <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
-            <a class="projectImage" :key="item.title + 'img'" :class="{'notAllowed' : !item.link, 'allowed' : item.link}" :href="item.link" target="_blank" @click="checkLink(item.link)">
-                <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.png`)" :alt="item.cardalt">
-            </a>
+            <section class="heroPadding">
+                <h2 class="projectTitle">{{item.title}}</h2>
+                <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
+                <a class="projectImage" :key="item.title + 'img'"  :href="item.link" target="_blank" @click="checkLink(item.link)">
+                    <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.png`)" :alt="item.cardalt">
+                </a>
+
+                <a v-if="item.link" :key="item.title + 'img'" :href="item.link" target="_blank">
+                    <section class="linkButton">
+                           <h2>
+                               {{ item.action }} {{ item.title }}
+                            </h2> 
+                    </section>
+                </a>
+            </section>
         </section>
 
         <section class="cardBorder ifDesktop hero">
@@ -62,20 +73,41 @@ import Links from '@/plugins/links.js'
 
 <style scoped>
 .container {
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
+    width:100vw;
 }
 
 .cardBorder {
     margin-bottom:10px;
 }
 
+.cardBorder a {
+    text-align:center;
+}
+
 .projectImage {
     display:block;
-    margin:30px;
+    margin:10px;
 }
 
 .projectImage img {
     margin:0 auto;
+}
+
+.linkButton {
+    padding:10px;
+    background:#eee;
+    border-radius:10px;
+    color:var(--primary-color);
+    margin:0 auto;
+}
+
+.linkButton:hover {
+    background:var(--primary-color);
+}
+
+.linkButton:hover > h2 {
+    color:#eee;
 }
 
 .imageSize {
