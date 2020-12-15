@@ -1,7 +1,7 @@
 <template>
-    <div class="chip flexRow">
+    <div class="chip flexRowBetween">
          <Icon :name="iconName"/> 
-         <p>{{ skill }}</p>
+         <p class="text">{{ skill }}</p>
     </div>
 </template>
 
@@ -20,5 +20,9 @@
   text-indent: 0px;
   color:black;
   box-shadow: 2px 2px 1px rgb(206, 206, 206);
+}
+
+.text {
+    margin-left:5px;
 }
 </style>
