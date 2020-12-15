@@ -4,29 +4,29 @@
     <div class="block">
          <section class="flexRowStart">
             <section v-if="type==='job'">
-              <section class="flexRow">
-                <h3>{{ title }} </h3>
-                <h4 class="subtitle">: {{ subtitle }}</h4>
+              <section class="flexRowStart">
+                <h1>{{ title }} </h1>
+                <h2 class="subtitle"><span class="ifDesktop">:</span> {{ subtitle }}</h2>
               </section>
-              <h5>| {{ role }} </h5>
+              <h3>| {{ role }} </h3>
             </section>
 
             <section v-else-if="type==='education'">
               <section class="flexRow">
-                <h3>{{ title }}</h3>
-                <h4 v-if="subtitle" class="subtitle">@ {{ subtitle }}</h4>
+                <h1>{{ title }}</h1>
+                <h2 v-if="subtitle" class="subtitle"><span class="ifDesktop">@</span> {{ subtitle }}</h2>
               </section>
-              <h5> | {{ role }} </h5>
+              <h3> | {{ role }} </h3>
             </section>
 
             <section v-else-if="type==='project'">
-              <h3>{{ title }}</h3>
-              <h4>{{ subtitle }}</h4>
+              <h1>{{ title }}</h1>
+              <h2>{{ subtitle }}</h2>
             </section>  
         </section>
 
         <section v-if="!url">
-          <p class="date">{{ startDate }} - {{ endDate }}</p>
+          <h3 class="date">{{ startDate }} - {{ endDate }}</h3>
           
           <ul>
               <li v-for="(item, index) in list" :key="`${item}${index}`">{{ item }}</li>
@@ -62,6 +62,10 @@
 </script>
 
 <style scoped>
+.subtitle {
+    margin-left:0px;  
+}
+
 .block {
   background:rgb(243, 243, 243);
   padding:15px 20px;
@@ -101,8 +105,6 @@ ul li {
 }
 
 @media (min-width: 1024px) {
-  .subtitle {
-    margin-left:5px;  
-  }
+  
 }
 </style>
