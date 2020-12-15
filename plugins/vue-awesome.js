@@ -30,5 +30,13 @@ import 'vue-awesome/icons/camera-retro'
 import 'vue-awesome/icons/search-plus'
 import 'vue-awesome/icons/palette'
 import 'vue-awesome/icons/blender'
+import 'vue-awesome/icons/bars'
+import 'vue-awesome/icons/home'
+import 'vue-awesome/icons/address-card'
+import 'vue-awesome/icons/book-open'
+import 'vue-awesome/icons/book'
+import 'vue-awesome/icons/microphone'
+import 'vue-awesome/icons/dice'
+import 'vue-awesome/icons/envelope-open-text'
 
 Vue.component('Icon', Icon)
