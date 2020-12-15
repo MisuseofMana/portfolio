@@ -5,8 +5,6 @@ import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '..\\assets\\styles\\importsAndVariables.css'
-
 import '..\\assets\\styles\\flexStyle.css'
 
 import '..\\assets\\styles\\transitions.css'
@@ -20,6 +18,8 @@ import '..\\assets\\styles\\tabletStyle.css'
 import '..\\assets\\styles\\desktopStyle.css'
 
 import '..\\assets\\styles\\fontStyles.css'
+
+import '..\\assets\\styles\\fonts.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'
 

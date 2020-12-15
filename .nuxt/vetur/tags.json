@@ -46,5 +46,11 @@
   },
   "LazyResumeChip": {
     "description": "Auto imported from components/resume/ResumeChip.vue"
+  },
+  "UtilityToast": {
+    "description": "Auto imported from components/utility/UtilityToast.vue"
+  },
+  "LazyUtilityToast": {
+    "description": "Auto imported from components/utility/UtilityToast.vue"
   }
 }
