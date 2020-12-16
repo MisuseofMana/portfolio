@@ -118,18 +118,13 @@ import Links from '@/plugins/links.js'
 /* Tablets and Up */
 @media (min-width: 768px) {
 .cardBorder {
-    margin-bottom:0px;
+    margin-bottom:10px;
 }
 
 .imageSize {
     border-radius: 20px;
     margin:0 auto;
-}
-}
-
-@media (min-width: 1024px) {
-.cardBorder {
-    margin-bottom:20px;
+    width:20px;
 }
 
 .projectWrapper {
@@ -209,5 +204,9 @@ import Links from '@/plugins/links.js'
     color:black;
     text-align:center;
 }
+}
+
+@media (min-width: 1024px) {
+
 }
 </style>
