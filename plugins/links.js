@@ -36,12 +36,12 @@ const comics = {
 
 const books = {
   pageName: 'Books',
-  description:[`I've dabbled in self publishing and produced two version of a book named "Dungeons of Amara." <a href="https://gumroad.com/l/CsdPh">You can purchase a digital or physical version of the 2019 edition on my Gumroad.</a> The older version is discontinued with no plans to reprint.`],
+  description:[`I've dabbled in self publishing and produced two version of the book below named "Dungeons of Amara.", "Both versions were produced through successful Kickstarter campaigns.`],
   links:[
     {
       title:"Dungeons Of Amara",
       category:"Publication",
-      description:['From Amara, comes this bards book of poetry and illustrations depicting baddies, merchants, and adventurers found in dark dungeons, deep caves, and bustling towns.'],
+      description:['A bardic book of poetry, depicting baddies, merchants, and more; all found in dark dungeons, deep caves, and bustling towns.'],
       cardAlt:'Cover art for a book called "Dungeons of Amara". Depicts a swordsman, a mage, and a varlet heading down into a dark dungeon.',
       background:"doaSplash",
       smallBackground:'smallDoaSplash',
@@ -87,7 +87,7 @@ const coding = {
       action:"Play"
     },
     {
-      title:"The Strategies Website",
+      title:"The Strategies",
       category:"Website",
       description:[`An informational website for an Indiana rehab client.`],
       cardAlt:"The Strategies Logo, a gold circle with 8 evenly spaced gold dots around it on a blue background.",
@@ -134,34 +134,6 @@ const podcasts = {
   ]
 }
 
-const games = {
-  pageName: 'Games',
-  description:[`A list of my esoteric and expirimental web games. I have an interest in cryptography and ciphers that pairs well with my dabbling in web development.`],
-  links:[
-    {
-      title:"Crickburrow Project",
-      category:"Web Game",
-      description:[`Crickburrow is a narrative cipher game being beamed from another realm. Don't spend long in the stream friend, you'll lose yourself.`],
-      cardAlt:"A typewritten memo discussing the Crickburrow foundation, appears to be a confidental document.",
-      background:"crickSplash",
-      smallBackground:'smallCrickSplash',
-      link:"http://www.crickburrow.com/",
-      action:"Solve the"
-    },
-    
-    {
-      title:"Moebius Dungeons",
-      category:"Web Game",
-      description:[`A high fantasy hack and slash adventure where you attack monsters to gain coins, then spend your wealth on lavish equipment and enchantments.`],
-      cardAlt:"Logo for Moebius Dungeons the game, a ghostly sword set on a vibrant neon pink background.",
-      background:"modunSplash",
-      smallBackground:'smallModunSplash',
-      link:"https://moebiusdungeons.com/",
-      action:"Play"
-    },
-  ]
-}
-
 const photography = {
   pageName: 'Photography',
   description:[`Back in the early 2000's I bought a Cannon Rebel T3 camera and it quickly became a good friend of mine. I twist and alter my mundane life into a catalogue of still frames that tell a story beyond the captured moment. Look carefully, you might find more than you expect.`],
@@ -184,6 +156,5 @@ export default {
   books,
   coding,
   podcasts,
-  games,
   photography
 }
