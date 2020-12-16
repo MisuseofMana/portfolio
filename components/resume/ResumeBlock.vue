@@ -6,7 +6,10 @@
             <section v-if="type==='job'">
               <section class="flexRowStart">
                 <h1>{{ title }} </h1>
-                <h2 class="subtitle"><span class="ifDesktop">:</span> {{ subtitle }}</h2>
+                <section class="flexRow subtitle">
+                  <h2 class="ifDesktop accent"> : </h2>
+                  <h2> {{ subtitle }}</h2>
+                </section>
               </section>
               <h3>| {{ role }} </h3>
             </section>
@@ -14,7 +17,11 @@
             <section v-else-if="type==='education'">
               <section class="flexRow">
                 <h1>{{ title }}</h1>
-                <h2 v-if="subtitle" class="subtitle"><span class="ifDesktop">@</span> {{ subtitle }}</h2>
+
+                <section v-if="subtitle" class="flexRow subtitle">
+                  <h2 class="ifDesktop accent"> @ </h2>
+                  <h2> {{ subtitle }}</h2>
+                </section>
               </section>
               <h3> | {{ role }} </h3>
             </section>
@@ -88,7 +95,7 @@ ul li {
 }
 
 .marginRight {
-  margin-right:8px;
+  margin-right:10px;
 }
    
    a {
@@ -101,7 +108,30 @@ ul li {
   }
 
 @media (min-width: 768px) {
+  .subtitle {
+      margin-left:10px;  
+  }
 
+  .accent {
+    margin-right:5px;
+  }
+
+  ul li {
+    margin-bottom:10px;
+  }
+
+  .marginRight {
+    margin-right:8px;
+  }
+    
+    a {
+      text-decoration:none;
+      color:white;
+      border-radius:10px;
+      margin:10px;
+      background-color:var(--primary-color);
+      padding:10px;
+    }
 }
 
 @media (min-width: 1024px) {
