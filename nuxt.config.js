@@ -9,7 +9,6 @@ export default {
         '@/assets/styles/desktopStyle.css',
         '@/assets/styles/fontStyles.css',
         '@/assets/styles/fonts.css',
-
     ],
     build: {
         transpile: [/vue-awesome/],
@@ -23,5 +22,9 @@ export default {
         meta: [
             { name:"viewport", content:"width=device-width, initial-scale=1, minimum-scale=1" },
         ]
+    },
+    target: 'static',
+    router: {
+        base: '/portfolio/'
     }
   }
