@@ -15,9 +15,10 @@
       </section>
     </section>
     <section class="resume hero">
+      <section class="heroPadding">
       <header>
-        <h2>History of a Lvl. {{this.devLevel}} Web Dev.</h2>
-        <h3>Web Designer, Comics Artist, Illustrator, Cryptographer, Storyteller, Friendly Guy, Designer</h3>
+        <h1>History of a Level {{this.devLevel}} Web Developer</h1>
+        <h2>Web Designer, Comics Artist, Illustrator, Cryptographer, Storyteller, Friendly Guy, Designer</h2>
       </header>
 
       <section class="experience">
@@ -54,13 +55,13 @@
         <h1>Proficiencies</h1>
 
         <h2><Icon name="desktop"/> Operating Systems</h2>
-        <section class="flexRowWrap">
+        <section class="resumeFlexRow">
           <ResumeChip iconName="keyboard" skill="Mac OS" />
           <ResumeChip iconName="desktop" skill="Windows OS" />
         </section>
         <br>
         <h2><Icon name="code"/> Coding</h2>
-        <section class="flexRowWrap">
+        <section class="resumeFlexRow">
           <ResumeChip iconName="file-code" skill="HTML 5"/>
           <ResumeChip iconName="code" skill="CSS 3"/>
           <ResumeChip iconName="laptop-code" skill="Javascript ES6"/>
@@ -75,7 +76,7 @@
         </section>
         <br>
         <h2><Icon name="swatchbook"/> Design</h2>
-        <section class="flexRowWrap">
+        <section class="resumeFlexRow">
             <ResumeChip iconName="palette" skill="Procreate"/>
             <ResumeChip iconName="search-plus" skill="Photoshop"/>
             <ResumeChip iconName="bezier-curve" skill="Illustrator"/>
@@ -152,6 +153,7 @@
 
         </section>
       </section>
+      </section>
     </section>
 </template>
 
@@ -170,6 +172,14 @@ export default {
 
 
 <style scoped>
+.resumeFlexRow {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .resumePage {
   margin-bottom:20px;
 }
@@ -227,7 +237,13 @@ header {
 
 /* Tablets and Up */
 @media (min-width: 768px) {
-
+.resumeFlexRow {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
 }
 
 @media (min-width: 1024px) {
