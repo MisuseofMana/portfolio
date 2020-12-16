@@ -3,7 +3,7 @@
         
         <section class="flexColumn">
             <transition name="fade" mode="out-in">
-                <section :key="this.allProjects[this.currentNumber].title">
+                <section class="cardHeader" :key="this.allProjects[this.currentNumber].title">
                     <section class='title'>
                         <h1>{{ allProjects[this.currentNumber].title}}</h1>
                         <h2> {{ allProjects[this.currentNumber].category}} </h2>
@@ -78,7 +78,6 @@ import Links from '@/plugins/links.js'
                     ...Links.books.links,
                     ...Links.coding.links,
                     ...Links.podcasts.links,
-                    ...Links.games.links,
                     ...Links.photography.links
                 ]
                 return allEntries;
@@ -101,6 +100,10 @@ import Links from '@/plugins/links.js'
 <style scoped>
 .cardTemplate {
     margin: 0 0 10px 0;
+}
+
+.cardHeader {
+    margin-bottom:10px;
 }
 
 .title {
