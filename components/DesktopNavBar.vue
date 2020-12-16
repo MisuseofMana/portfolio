@@ -1,8 +1,8 @@
 <template>
   <nav @click="toggleNav()" class="navigation navHeader flexRow">
     <section class="innerNavigation">
-      <section class="flexRowBetween title">
-        <section class="flexRowStart">
+      <section class="flexRowAround title">
+        <section>
           <h1>SEAN YAGER</h1>
           <transition name="fade" mode="out-in">
               <h3 class="titleQuip" :key="randomTitle">{{randomTitle}}</h3>
@@ -12,7 +12,7 @@
           <SocialMedia/>
       </section>
 
-      <ul class="flexRow navHeader">
+      <ul class="flexRowWrap navMenu">
         <NuxtLink to="/" exact><li>Home</li></NuxtLink>
         <NuxtLink to="/about"><li>About</li></NuxtLink>
         <NuxtLink to="projects/comics"><li>Comics</li></NuxtLink>
@@ -39,13 +39,13 @@
           navOpen: false,
           randomNumber: 0,
           titles: [
-            ":Storyteller",
-            ":Comics Artist",
-            ":Designer",
-            ":Web Dev",
-            ":Maker",
-            ":Poet",
-            ":Friend"
+            "A Storyteller",
+            "A Comics Artist",
+            "A Designer",
+            "A Web Developer",
+            "A Maker",
+            "A Poet",
+            "A Friend"
           ]
         }
       },
@@ -76,76 +76,56 @@
 
 <style scoped>
 .navigation {
-  margin: 0 0 15px 0;
-  padding:0px 0 15px 0;
-  border-bottom:solid 2px black
+  border-bottom:solid 2px black;
+  margin-bottom:20px;
 }
 
 .innerNavigation {
-  width:90%;
+  padding:20px;
   max-width:1450px;
-  margin:0 auto;
 }
 
 .navHeader {
   background:white;
-  z-index:9999;
 }
 
 .title {
   text-align:left;
-  margin:0 0 20px 0px;
-  padding:10px 0 0 0;
+  margin-bottom:10px;
 }
 
 .titleQuip {
   min-width:200px;
 }
 
-
-p {
-  margin:0 10px 0 0;
-  padding:0;
+.navMenu li {
+  padding:10px;
+  border-radius:10px;
+  background:#eee;
 }
 
-.navMenu {
-  background:white;
-  box-shadow: 1px 1px 3px black;
-  width:100%;
-  z-index:9999;
+.navMenu a {
+  margin:10px 20px;
 }
 
 ul {
-  text-indent:0px;
-  display:flex;
-  margin:0;
-}
-
-ul li {
-  font-family: var(--plain-font);
-  list-style: none;
-  text-align:center;
-  text-transform:uppercase;
-  text-decoration:none;
-  border-radius:8px;
+  list-style:none;
+  text-indent:0;
 }
 
 ul a.nuxt-link-exact-active li {
   background-color:var(--primary-color);
+  border-radius:10px;
   color:white;
-}
-
-ul a.nuxt-link-exact-active li:before {
-  content:">> "
 }
 
 ul a {
   text-decoration: none;
   transition: all .3s ease-in-out;
+  border-radius:10px;
 }
 
 ul a:hover {
-  border-radius:8px;
   background-color:var(--primary-color);
   color:white;
   transition: all .3s ease-in-out;
