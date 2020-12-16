@@ -2,7 +2,7 @@
 	<nav>
 		<section class="flexRowBetween innerNavHeader" key="header" @click="toggleNav()">
 			<section class="title">
-			<h1>SEAN YAGER</h1>
+			<h1>Sean Yager</h1>
 			<transition name="fade" mode="out-in">
 				<h2 class="thinFont" :key="randomTitle">{{randomTitle}}</h2>
 			</transition>
@@ -27,7 +27,6 @@
 						<NuxtLink class="flexRowCenter" to="projects/books"><Icon name="book"/> Books</NuxtLink>
 						<NuxtLink class="flexRowCenter" to="projects/coding"><Icon name="code"/> Coding</NuxtLink>
 						<NuxtLink class="flexRowCenter" to="projects/podcasts"><Icon name="microphone"/> Podcasts</NuxtLink>
-						<NuxtLink class="flexRowCenter" to="projects/games"><Icon name="dice"/> Games</NuxtLink>
 						<NuxtLink class="flexRowCenter" to="projects/photography"><Icon name="camera-retro"/> Photography</NuxtLink>
 						<NuxtLink class="flexRowCenter" to="/resume"><Icon name="envelope-open-text"/> Resume</NuxtLink>
 					</section>
