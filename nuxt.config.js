@@ -29,5 +29,8 @@ export default {
     target: 'static',
     router: {
         base: '/portfolio/'
-    }
+    },
+    generate: {
+        dir: 'docs'
+      }
   }
