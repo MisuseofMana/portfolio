@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/coding", {data:[{slug:"coding"}],fetch:[],mutations:void 0});

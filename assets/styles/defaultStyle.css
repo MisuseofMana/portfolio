@@ -1,0 +1,52 @@
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    background-image: url('../imgs/portfolio-stack-mobile.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    min-width:100%;
+    margin:0;
+    overflow-x:hidden;
+    padding: 0px 0px 0 0;
+}
+
+.hero {
+    width:90vw;
+    margin:0 auto 10px auto;
+    background:rgba(255,255,255,.98);
+    box-shadow: 1px 1px 4px black;
+    max-width:1400px;
+}
+
+.heroPadding {
+    padding:10px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.reveal {
+    opacity:0;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.floatRight {
+    float:right;
+}
+
+.ifDesktop {
+    display:none;
+}
+
+.ifMobile {
+    display:block;
+}

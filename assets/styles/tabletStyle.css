@@ -1,0 +1,18 @@
+/* Tablet and Up */
+@media (min-width: 768px) {
+    .ifDesktop {
+        display:block;
+    }
+    
+    .ifMobile {
+        display:none;
+    }
+
+    .heroPadding {
+        padding:20px;
+    }
+
+    .hero {
+        margin:20px auto;
+    }
+}

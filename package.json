@@ -1,11 +1,12 @@
 {
-  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "name": "porfolio",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -15,6 +16,7 @@
     "core-js": "^3.6.5",
     "express": "^4.17.1",
     "moment": "^2.29.1",
+    "nuxt": "^2.14.10",
     "vue": "^2.6.11",
     "vue-awesome": "^4.1.0",
     "vue-router": "^3.4.9",
