@@ -9,8 +9,9 @@
                 <p>If you're interested in finding out more about my projects, I'm all over the place on social media just look me up!</p>
             </section>
 
+            <h1 class="handle">@MisuseofMana</h1>
+
             <section class="flexRowAround">
-                <h1 class="handle">@MisuseofMana</h1>
                 <SocialMedia/>
             </section>
         </section>
@@ -23,6 +24,10 @@ img.imageFit{
     border-radius:999px;
     margin:0 10px 10px 10px;
     float:right;
+}
+
+.handle {
+    text-align:center;
 }
 
 /* Tablets and Up */
