@@ -13,7 +13,7 @@
             <section class="heroPadding">
                 <h2 class="projectTitle">{{item.title}}</h2>
                 <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
-                <a class="projectImage" :key="item.title + 'img'"  :href="item.link" target="_blank" @click="checkLink(item.link)">
+                <a class="projectImage" :key="item.title + 'imgMobile'"  :href="item.link" target="_blank" @click="checkLink(item.link)">
                     <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.png`)" :alt="item.cardalt">
                 </a>
 
@@ -30,17 +30,17 @@
         <section class="cardBorder ifDesktop hero">
             <section class="flexRowWrap">
                 <section class="projectWrapper" v-for="(project, index) in this.content.links" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.png`)})`}">   
-                <section class='projectOverlay flexColumn' :key="project.title">
-                    <h1>{{ project.title}}</h1>
-                    
-                    <section :key="project.title  + 'describe'" class="description">
-                        <p v-for="(sentences, index) in project.description" :key='sentences[0]+index'>{{ sentences }}</p>
-                    </section>
+                    <section class='projectOverlay flexColumn' :key="project.title">
+                        <h1>{{ project.title}}</h1>
+                        
+                        <section :key="project.title  + 'describe'" class="description">
+                            <p v-for="(sentences, index) in project.description" :key='sentences[0]+index'>{{ sentences }}</p>
+                        </section>
 
-                    <a v-if="project.link" :href="project.link" target="_blank" class="link">See More</a>
+                        <a v-if="project.link" :href="project.link" target="_blank" class="link">See More</a>
+                    </section>
                 </section>
             </section>
-        </section>
         </section>
     </div>
 </template>
@@ -96,10 +96,14 @@ import Links from '@/plugins/links.js'
 
 .linkButton {
     padding:10px;
-    background:#eee;
+    background:var(--primary-color);
     border-radius:10px;
-    color:var(--primary-color);
+    color:#eee;
     margin:0 auto;
+}
+
+.linkButton h2 {
+    color:#eee;
 }
 
 .linkButton:hover {
@@ -115,6 +119,10 @@ import Links from '@/plugins/links.js'
     width:100%;
 }
 
+.description p {
+    color:white;
+}
+
 /* Tablets and Up */
 @media (min-width: 768px) {
 .cardBorder {
@@ -128,8 +136,8 @@ import Links from '@/plugins/links.js'
 }
 
 .projectWrapper {
-    width:325px;
-    height:500px;
+    width:300px;
+    height:475px;
     border-radius:20px;
     display:grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -152,13 +160,12 @@ import Links from '@/plugins/links.js'
     border-radius:20px;
     background:rgba(0, 116, 124, .9);
     color:white;
-    display:flex;
+    opacity:0;
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    opacity:0;
-    padding:10px;
-    transition: opacity .3s
+    padding:20px;
+    transition: all .3s
 }
 
 .projectWrapper:hover > .projectOverlay {
@@ -167,8 +174,8 @@ import Links from '@/plugins/links.js'
     justify-content:center;
     flex-direction:column;
     opacity:1;
-    padding:10px;
-    transition: opacity .3s;
+    padding:20px;
+    transition: all .3s;
 }
 
 .projectOverlay h1 {
@@ -207,6 +214,13 @@ import Links from '@/plugins/links.js'
 }
 
 @media (min-width: 1024px) {
+.projectWrapper {
+    width:325px;
+    height:500px;
+}
 
+.cardBorder {
+    margin-bottom:20px;
+}
 }
 </style>
