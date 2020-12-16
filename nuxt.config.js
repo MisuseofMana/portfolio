@@ -20,7 +20,10 @@ export default {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         ],
         meta: [
-            { name:"viewport", content:"width=device-width, initial-scale=1, minimum-scale=1" },
+            { property:"og:url", content:"@/assets/imgs/og/index.png" },
+            { property:"og:type", content:"website" },
+            { property:"og:description", content:"Sean Yager's portfolio website, featuring his artwork, coding projects, writing, podcasting, publications, and comics." },
+
         ]
     },
     target: 'static',
