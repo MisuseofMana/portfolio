@@ -1,9 +1,9 @@
 <template>
   <nav @click="toggleNav()" class="navigation navHeader flexRow">
     <section class="innerNavigation">
-      <section class="flexRowAround title">
+      <section class="flexRowBetween title">
         <section>
-          <h1>SEAN YAGER</h1>
+          <h1>The Art of Sean Yager</h1>
           <transition name="fade" mode="out-in">
               <h3 class="titleQuip" :key="randomTitle">{{randomTitle}}</h3>
           </transition>
@@ -19,7 +19,6 @@
         <NuxtLink to="projects/books"><li>Books</li></NuxtLink>
         <NuxtLink to="projects/coding"><li>Coding</li></NuxtLink>
         <NuxtLink to="projects/podcasts"><li>Podcasts</li></NuxtLink>
-        <NuxtLink to="projects/games"><li>Games</li></NuxtLink>
         <NuxtLink to="projects/photography"><li>Photography</li></NuxtLink>
         <NuxtLink to="/resume"><li>Resume</li></NuxtLink>
       </ul>
@@ -83,6 +82,7 @@
 .innerNavigation {
   padding:20px;
   max-width:1450px;
+  margin:0 auto;
 }
 
 .navHeader {
@@ -99,13 +99,13 @@
 }
 
 .navMenu li {
-  padding:10px;
+  padding:15px;
   border-radius:10px;
   background:#eee;
 }
 
 .navMenu a {
-  margin:10px 20px;
+  margin:10px 10px;
 }
 
 ul {
