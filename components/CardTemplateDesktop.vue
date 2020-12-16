@@ -10,7 +10,7 @@
                         <p v-for="(sentences, index) in project.description" :key='sentences[0]+index'>{{ sentences }}</p>
                     </section>
 
-                    <a v-if="project.link" :href="project.link" target="_bla" class="link">See More</a>
+                    <a v-if="project.link" :href="project.link" target="_blank" class="link">{{ project.action }}</a>
                 </section>
             </section>
         </section>
@@ -56,7 +56,6 @@ import Links from '@/plugins/links.js'
                     ...Links.books.links,
                     ...Links.coding.links,
                     ...Links.podcasts.links,
-                    ...Links.games.links,
                     ...Links.photography.links
                 ]
                 return allEntries;
@@ -91,7 +90,7 @@ import Links from '@/plugins/links.js'
     background-position: center;
     background-size: cover;
     box-shadow:3px 3px 3px 1px #ccc;
-    margin:30px 15px;
+    margin:30px 10px;
     transition: box-shadow .3s;
 }
 
@@ -113,6 +112,10 @@ import Links from '@/plugins/links.js'
     opacity:0;
     padding:10px;
     transition: opacity .3s
+}
+
+.projectOverlay h1, .projectOverlay p {
+    color:white;
 }
 
 .projectWrapper:hover > .projectOverlay {
@@ -159,6 +162,20 @@ h1 {
     background:white;
     color:black;
     text-align:center;
+}
+
+@media (min-width: 768px) {
+    .projectWrapper {
+        width:300px;
+        height:475px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projectWrapper {
+        width:350px;
+        height:525px;
+    }
 }
 
 </style>
