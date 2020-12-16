@@ -48,27 +48,36 @@
 <script>
 import Links from '@/plugins/links.js'
 
-    export default {
-        async asyncData({ params }) {
-            const slug = params.projectTemplate
-            return { slug }
-        },
-        methods: {
-            checkLink(exists) {
-                if(exists){
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            },
-        },
-        computed: {
-            content: function () {
-                return Links[this.slug]
+export default {
+    async asyncData({ params }) {
+        const slug = params.projectTemplate
+        return { slug }
+    },
+    methods: {
+        checkLink(exists) {
+            if(exists){
+                return true;
             }
+            else {
+                return false;
+            }
+        },
+    },
+    computed: {
+        content: function () {
+            return Links[this.slug]
         }
+    },
+    head() {
+        return {
+            title: `${this.slug.toUpperCase()}`,
+            meta:  [
+                    { property:"og:url", content:`@/assets/imgs/og/${this.slug}.png` },
+                    { property:"og:description", content:`Sean Yager's ${this.slug} page. Visit to learn more.` },
+                ]
+            }
     }
+}
 </script>
 
 <style scoped>

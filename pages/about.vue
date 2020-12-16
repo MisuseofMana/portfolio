@@ -18,6 +18,20 @@
     </div>
 </template>
 
+<script>
+    export default {
+        head() {
+        return {
+            title: `About`,
+            meta:  [
+                    { property:"og:url", content:`@/assets/imgs/og/about.png` },
+                    { property:"og:description", content:`All about Sean Yager. Sean is a freelance illustrator, web dev, writer, and well rounded dude.` },
+                ]
+            }
+    }
+    }
+</script>
+
 <style scoped>
 img.imageFit{
     width:50%;

@@ -165,6 +165,15 @@ export default {
   computed: {
     devLevel: function () {
       return moment(19930326, "YYYYMMDD").fromNow().slice(0, -9) - 1;
+    },
+    head() {
+        return {
+            title: `Resume`,
+            meta:  [
+                    { property:"og:url", content:`@/assets/imgs/og/resume.png` },
+                    { property:"og:description", content:`Sean Yager's resume, featuring his recent projects in art, web development, and freelance branding.` },
+                ]
+            }
     }
 }
 }
