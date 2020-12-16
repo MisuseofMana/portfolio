@@ -57,6 +57,7 @@ p {
     font-size: 4vw; 
     font-weight:400;
     text-size-adjust:none;
+    margin:8px 0px;
 }
 
 ul {
@@ -79,128 +80,142 @@ a, a:link {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-.fa-icon {
-    width: auto;
-    height: 6vw; 
-    max-width: 100%;
-    max-height: 100%;
-}
-
-h1 {
-    font-family: var(--h1-font);
-    color:var(--font-color);
-    font-weight:700;
-    margin:8px 0px;
-    text-size-adjust:none;
-}
-
-h2, h3   {
-    font-family: var(--plain-font);
-    color:var(--font-color);
-    font-weight:900;
-    margin:5px 0px;
-    text-size-adjust:none;
-}
-
-h4, h5   {
-    font-family: var(--plain-font);
-    color:var(--font-color);
-    font-weight:400;
-    margin:2px 0px;
-    text-size-adjust:none;
-}
-
-h1 { font-size:6.5vw; }
-
-h2 { font-size: 5vw; }
-
-h3 { font-size: 4vw; }
-
-h4 { font-size: 2.5vw; }
-
-h5 { font-size: 2vw; }
-
-p { 
-    font-family: var(--plain-font);
-    color: var(--font-color);
-    font-size: 4vw; 
-    font-weight:400;
-    text-size-adjust:none;
-}
-
-ul {
-    font-family: var(--plain-font);
-    margin:10px 0;
-    padding:0 10px;
-    text-indent: 10px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0;
-}
-
-li{
-    font-family: var(--plain-font);
-    font-size: 4vw;
-}
-
-a, a:link {
-    font-family: var(--plain-font);
-    text-decoration:none;
-    font-size: 4vw; 
-    font-weight:400;
-}
-}
+@media (min-width: 576px) { }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .fa-icon {
-        height: 6vw; 
+        height: 4vw; 
     }
     
     h1 {
-        margin:8px 0px;
+        margin:10px 0px;
     }
     
     h2, h3   {
+        margin:7px 0px;
+    }
+    
+    h4, h5   {
+        margin:3px 0px;
+    }
+    
+    h1 { font-size:4vw; }
+    
+    h2 { font-size: 3vw; }
+    
+    h3 { font-size: 2.5vw; }
+    
+    h4 { font-size: 1.5vw; }
+    
+    h5 { font-size: 1vw; }
+    
+    p, a, a:link { 
+        font-size: 2.5vw; 
+    }
+
+    li {
+        font-size:3vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+        line-height:2.8vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .fa-icon {
+        height: 3vw; 
+    }
+    
+    h1 {
+        margin:12px 0px;
+    }
+    
+    h2, h3   {
+        margin:9px 0px;
+    }
+    
+    h4, h5   {
         margin:5px 0px;
+    }
+    
+    h1 { font-size:3vw; }
+    
+    h2 { font-size: 2.5vw; }
+    
+    h3 { font-size: 2vw; }
+    
+    h4 { font-size: 1.4vw; }
+    
+    h5 { font-size: 1vw; }
+    
+    p { 
+        font-size: 2.5vw; 
+    }
+
+    li {
+        font-size:1.5vw;
+    }
+
+    a, a:link {
+        font-size:1.5vw;
+    }
+
+    p {
+        font-size: 2vw;
+        line-height:2.5vw;
+        font-weight:400;
+        text-size-adjust:none;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .fa-icon {
+        height: 2vw; 
+    }
+    
+    h1 {
+        margin:0px 0px;
+    }
+    
+    h2, h3   {
+        margin:4px 0px;
     }
     
     h4, h5   {
         margin:2px 0px;
     }
     
-    h1 { font-size:5vw; }
+    h1 { font-size:2vw; }
     
-    h2 { font-size: 4vw; }
+    h2 { font-size: 1.5vw; }
     
-    h3 { font-size: 3vw; }
+    h3 { font-size: 2vw; }
     
-    h4 { font-size: 2.5vw; }
+    h4 { font-size: 1.4vw; }
     
-    h5 { font-size: 2vw; }
+    h5 { font-size: 1vw; }
     
     p { 
-        font-size: 3vw; 
+        font-size: 2.5vw; 
     }
-    
-    li{
-        font-size: 3vw;
+
+    li {
+        font-size:1.5vw;
     }
-    
+
     a, a:link {
-        font-size: 3vw;
+        font-size:1vw;
     }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
+    p {
+        font-size: 1.5vw;
+        line-height:1.8vw;
+        font-weight:400;
+        text-size-adjust:none;
+    }
 }

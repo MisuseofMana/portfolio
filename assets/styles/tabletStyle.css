@@ -11,4 +11,8 @@
     .heroPadding {
         padding:20px;
     }
+
+    .hero {
+        margin:20px auto;
+    }
 }
