@@ -23,7 +23,7 @@ export default {
             { property:"og:url", content:"@/assets/imgs/og/index.png" },
             { property:"og:type", content:"website" },
             { property:"og:description", content:"Sean Yager's portfolio website, featuring his artwork, coding projects, writing, podcasting, publications, and comics." },
-
+            { name:"viewport", content:"width=device-width, initial-scale=1" }
         ]
     },
     target: 'static',

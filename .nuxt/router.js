@@ -4,10 +4,10 @@ import { normalizeURL } from '@nuxt/ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _5f513eae = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _16fd865c = () => interopDefault(import('..\\pages\\resume.vue' /* webpackChunkName: "pages/resume" */))
-const _1209661d = () => interopDefault(import('..\\pages\\projects\\_projectTemplate.vue' /* webpackChunkName: "pages/projects/_projectTemplate" */))
-const _7f091973 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _104ae87e = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _e0c448ae = () => interopDefault(import('..\\pages\\resume.vue' /* webpackChunkName: "pages/resume" */))
+const _e3a1da2c = () => interopDefault(import('..\\pages\\projects\\_projectTemplate.vue' /* webpackChunkName: "pages/projects/_projectTemplate" */))
+const _17926686 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -20,26 +20,26 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: '/portfolio/',
+  base: '/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
 
   routes: [{
     path: "/about",
-    component: _5f513eae,
+    component: _104ae87e,
     name: "about"
   }, {
     path: "/resume",
-    component: _16fd865c,
+    component: _e0c448ae,
     name: "resume"
   }, {
     path: "/projects/:projectTemplate?",
-    component: _1209661d,
+    component: _e3a1da2c,
     name: "projects-projectTemplate"
   }, {
     path: "/",
-    component: _7f091973,
+    component: _17926686,
     name: "index"
   }],
 
