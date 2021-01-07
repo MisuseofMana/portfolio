@@ -2,29 +2,29 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\Users\\\\conta\\\\Desktop\\\\portfolio\\\\pages\\\\about.vue",
+    "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_104ae87e"
+    "_name": "_5f513eae"
   },
   {
     "name": "resume",
     "path": "/resume",
-    "component": "C:\\\\Users\\\\conta\\\\Desktop\\\\portfolio\\\\pages\\\\resume.vue",
+    "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\resume.vue",
     "chunkName": "pages/resume",
-    "_name": "_e0c448ae"
+    "_name": "_16fd865c"
   },
   {
     "name": "projects-projectTemplate",
     "path": "/projects/:projectTemplate?",
-    "component": "C:\\\\Users\\\\conta\\\\Desktop\\\\portfolio\\\\pages\\\\projects\\\\_projectTemplate.vue",
+    "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\projects\\\\_projectTemplate.vue",
     "chunkName": "pages/projects/_projectTemplate",
-    "_name": "_e3a1da2c"
+    "_name": "_1209661d"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\conta\\\\Desktop\\\\portfolio\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_17926686"
+    "_name": "_7f091973"
   }
 ]
