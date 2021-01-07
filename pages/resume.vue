@@ -170,7 +170,7 @@ export default {
         return {
             title: `Resume`,
             meta:  [
-                    { property:"og:url", content:`@/assets/imgs/og/resume.png` },
+                    { property:"og:url", content:`@/assets/imgs/og/resume.jpg` },
                     { property:"og:description", content:`Sean Yager's resume, featuring his recent projects in art, web development, and freelance branding.` },
                 ]
             }

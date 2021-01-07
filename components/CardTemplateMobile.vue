@@ -15,7 +15,7 @@
                 <Icon @click="backNavigation" name="arrow-circle-left" class="arrow"/>
 
                 <transition name="fade" mode="out-in">
-                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifMobile" :style="{backgroundImage: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].smallBackground}.png`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
+                    <a :key="this.allProjects[this.currentNumber].title + 'imgSmall'" class="cardImage ifMobile" :style="{backgroundImage: `url(${require(`@/assets/imgs/${allProjects[this.currentNumber].smallBackground}.jpg`)})`}" :href="allProjects[this.currentNumber].link" target="_blank" @click="checkLink"></a>
                 </transition>
 
                 <Icon @click="forwardNavigation" name="arrow-circle-right" class="arrow"/>

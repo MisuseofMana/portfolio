@@ -1,7 +1,7 @@
 <template>
     <section class="cardTemplate ifDesktop">
         <section class="flexRowWrap">
-            <section class="projectWrapper" v-for="(project, index) in this.allProjects" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.png`)})`}">   
+            <section class="projectWrapper" v-for="(project, index) in this.allProjects" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.jpg`)})`}">   
                 <section class='projectOverlay flexColumn' :key="project.title">
                     <h1>{{ project.title}}</h1>
                     <p> {{ project.category}} </p>

@@ -2,7 +2,7 @@
     <div class="hero flexColumn">
         <h1>Oops! Error 404</h1>
         <h2>Not Found</h2>
-        <img :src="`${require(`@/assets/imgs/${randomNumber}.png`)}`" alt="">
+        <img :src="`${require(`@/assets/imgs/${randomNumber}.jpg`)}`" alt="">
         <p>Sorry! Something went wrong here, this page couldn't be found.</p>
     </div>
 </template>

@@ -14,7 +14,7 @@
                 <h2 class="projectTitle">{{item.title}}</h2>
                 <p class="projectDescription" v-for="(sentence, index) in item.description" :key="sentence[0]+index">{{sentence}}</p>
                 <a class="projectImage" :key="item.title + 'imgMobile'"  :href="item.link" target="_blank" @click="checkLink(item.link)">
-                    <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.png`)" :alt="item.cardalt">
+                    <img class="imageSize" :src="require(`@/assets/imgs/${item.background}.jpg`)" :alt="item.cardalt">
                 </a>
 
                 <a v-if="item.link" :key="item.title + 'img'" :href="item.link" target="_blank">
@@ -29,7 +29,7 @@
 
         <section class="cardBorder ifDesktop hero">
             <section class="flexRowWrap">
-                <section class="projectWrapper" v-for="(project, index) in this.content.links" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.png`)})`}">   
+                <section class="projectWrapper" v-for="(project, index) in this.content.links" :key="project.title + index" :style="{backgroundImage: `url(${require(`@/assets/imgs/${project.background}.jpg`)})`}">   
                     <section class='projectOverlay flexColumn' :key="project.title">
                         <h1>{{ project.title}}</h1>
                         
@@ -72,7 +72,7 @@ export default {
         return {
             title: `${this.slug.toUpperCase()}`,
             meta:  [
-                    { property:"og:url", content:`@/assets/imgs/og/${this.slug}.png` },
+                    { property:"og:url", content:`@/assets/imgs/og/${this.slug}.jpg` },
                     { property:"og:description", content:`Sean Yager's ${this.slug} page. Visit to learn more.` },
                 ]
             }
