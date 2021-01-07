@@ -12,7 +12,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_b11a05a0 from 'nuxt_plugin_plugin_b11a05a0' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_06bf924d from 'nuxt_plugin_plugin_06bf924d' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_vueawesome_8117af62 from 'nuxt_plugin_vueawesome_8117af62' // Source: ..\\plugins\\vue-awesome.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -59,7 +59,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"The Art Of Sean Yager","link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"}],"meta":[{"property":"og:url","content":"@\u002Fassets\u002Fimgs\u002Fog\u002Findex.png"},{"property":"og:type","content":"website"},{"property":"og:description","content":"Sean Yager's portfolio website, featuring his artwork, coding projects, writing, podcasting, publications, and comics."}],"style":[],"script":[]},
+    head: {"title":"The Art Of Sean Yager","link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"}],"meta":[{"property":"og:url","content":"@\u002Fassets\u002Fimgs\u002Fog\u002Findex.png"},{"property":"og:type","content":"website"},{"property":"og:description","content":"Sean Yager's portfolio website, featuring his artwork, coding projects, writing, podcasting, publications, and comics."},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -173,8 +173,8 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_b11a05a0 === 'function') {
-    await nuxt_plugin_plugin_b11a05a0(app.context, inject)
+  if (typeof nuxt_plugin_plugin_06bf924d === 'function') {
+    await nuxt_plugin_plugin_06bf924d(app.context, inject)
   }
 
   if (typeof nuxt_plugin_vueawesome_8117af62 === 'function') {

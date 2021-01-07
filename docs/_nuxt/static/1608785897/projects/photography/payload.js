@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/photography", {data:[{slug:"photography"}],fetch:[],mutations:void 0});

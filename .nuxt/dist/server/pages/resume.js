@@ -1,30 +1,50 @@
 exports.ids = [4];
 exports.modules = {
 
+<<<<<<< HEAD
 /***/ 120:
+=======
+/***/ 124:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(129);
+=======
+var content = __webpack_require__(133);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(2).default
 module.exports.__inject__ = function (context) {
+<<<<<<< HEAD
   add("03679316", content, true, context)
+=======
+  add("3456ffe5", content, true, context)
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 };
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 121:
+=======
+/***/ 125:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(131);
+=======
+var content = __webpack_require__(135);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -35,13 +55,21 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 122:
+=======
+/***/ 126:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(133);
+=======
+var content = __webpack_require__(137);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -52,45 +80,75 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 128:
+=======
+/***/ 132:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_18e50806_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(120);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_18e50806_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_18e50806_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_18e50806_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_18e50806_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+=======
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_42537364_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(124);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_42537364_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_42537364_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_42537364_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_resume_vue_vue_type_style_index_0_id_42537364_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 129:
+=======
+/***/ 133:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(1);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
+<<<<<<< HEAD
 exports.push([module.i, ".resumeFlexRow[data-v-18e50806]{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-evenly}.resumePage[data-v-18e50806]{margin-bottom:20px}.resume[data-v-18e50806]{display:grid;grid-template-columns:auto;grid-template-rows:auto;margin:0 auto;grid-template-areas:\"header\" \"experience\" \"skills\" \"education\" \"personal\"}.education[data-v-18e50806],.experience[data-v-18e50806],.personal[data-v-18e50806],.skills[data-v-18e50806],header[data-v-18e50806]{padding:10px}header h1[data-v-18e50806],header h2[data-v-18e50806],header h3[data-v-18e50806]{text-align:center}h1[data-v-18e50806],h2[data-v-18e50806],h3[data-v-18e50806]{text-align:left}header[data-v-18e50806]{display:flex;justify-content:center;align-items:center;flex-direction:column;grid-area:header;border-bottom:1px solid #000}.skills[data-v-18e50806]{grid-area:skills}.experience[data-v-18e50806]{grid-area:experience}.education[data-v-18e50806]{grid-area:education}.personal[data-v-18e50806]{grid-area:personal}@media (min-width:768px){.resumeFlexRow[data-v-18e50806]{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start}}@media (min-width:1024px){.resume[data-v-18e50806]{display:grid;grid-template-columns:auto;grid-template-rows:auto;margin:0 auto;grid-template-areas:\"header header\" \"experience skills\" \"personal education\"}header h1[data-v-18e50806],header h2[data-v-18e50806],header h3[data-v-18e50806]{text-align:center;margin:5px}h1[data-v-18e50806],h2[data-v-18e50806],h3[data-v-18e50806]{text-align:left}}", ""]);
+=======
+exports.push([module.i, ".resumeFlexRow[data-v-42537364]{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-evenly}.resumePage[data-v-42537364]{margin-bottom:20px}.resume[data-v-42537364]{display:grid;grid-template-columns:auto;grid-template-rows:auto;margin:0 auto;grid-template-areas:\"header\" \"experience\" \"skills\" \"education\" \"personal\"}.education[data-v-42537364],.experience[data-v-42537364],.personal[data-v-42537364],.skills[data-v-42537364],header[data-v-42537364]{padding:10px}header h1[data-v-42537364],header h2[data-v-42537364],header h3[data-v-42537364]{text-align:center}h1[data-v-42537364],h2[data-v-42537364],h3[data-v-42537364]{text-align:left}header[data-v-42537364]{display:flex;justify-content:center;align-items:center;flex-direction:column;grid-area:header;border-bottom:1px solid #000}.skills[data-v-42537364]{grid-area:skills}.experience[data-v-42537364]{grid-area:experience}.education[data-v-42537364]{grid-area:education}.personal[data-v-42537364]{grid-area:personal}@media (min-width:768px){.resumeFlexRow[data-v-42537364]{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start}}@media (min-width:1024px){.resume[data-v-42537364]{display:grid;grid-template-columns:auto;grid-template-rows:auto;margin:0 auto;grid-template-areas:\"header header\" \"experience skills\" \"personal education\"}header h1[data-v-42537364],header h2[data-v-42537364],header h3[data-v-42537364]{text-align:center;margin:5px}h1[data-v-42537364],h2[data-v-42537364],h3[data-v-42537364]{text-align:left}}", ""]);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 // Exports
 module.exports = exports;
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 130:
+=======
+/***/ 134:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeBlock_vue_vue_type_style_index_0_id_2db779ec_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(121);
+=======
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeBlock_vue_vue_type_style_index_0_id_2db779ec_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeBlock_vue_vue_type_style_index_0_id_2db779ec_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeBlock_vue_vue_type_style_index_0_id_2db779ec_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeBlock_vue_vue_type_style_index_0_id_2db779ec_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeBlock_vue_vue_type_style_index_0_id_2db779ec_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 131:
+=======
+/***/ 135:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -104,19 +162,31 @@ module.exports = exports;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 132:
+=======
+/***/ 136:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeChip_vue_vue_type_style_index_0_id_0bd4aeb5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(122);
+=======
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeChip_vue_vue_type_style_index_0_id_0bd4aeb5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(126);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeChip_vue_vue_type_style_index_0_id_0bd4aeb5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeChip_vue_vue_type_style_index_0_id_0bd4aeb5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeChip_vue_vue_type_style_index_0_id_0bd4aeb5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_nuxt_webpack_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_nuxt_webpack_node_modules_vue_loader_lib_index_js_vue_loader_options_ResumeChip_vue_vue_type_style_index_0_id_0bd4aeb5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 133:
+=======
+/***/ 137:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -130,7 +200,11 @@ module.exports = exports;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 140:
+=======
+/***/ 144:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -211,7 +285,11 @@ var componentNormalizer = __webpack_require__(3);
 
 function injectStyles (context) {
   
+<<<<<<< HEAD
   var style0 = __webpack_require__(130)
+=======
+  var style0 = __webpack_require__(134)
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -225,7 +303,11 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "2db779ec",
+<<<<<<< HEAD
   "e9042c68"
+=======
+  "7e4d336b"
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
   
 )
 
@@ -233,7 +315,11 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 141:
+=======
+/***/ 145:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -269,7 +355,11 @@ var componentNormalizer = __webpack_require__(3);
 
 function injectStyles (context) {
   
+<<<<<<< HEAD
   var style0 = __webpack_require__(132)
+=======
+  var style0 = __webpack_require__(136)
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -283,7 +373,11 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "0bd4aeb5",
+<<<<<<< HEAD
   "7ea37edd"
+=======
+  "8ff5f544"
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
   
 )
 
@@ -291,28 +385,42 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 145:
+=======
+/***/ 149:
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./pages/resume.vue?vue&type=template&id=18e50806&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"resumePage"},[_vm._ssrNode("<section class=\"hero\" data-v-18e50806><section class=\"heroPadding\" data-v-18e50806><h1 data-v-18e50806>Resume</h1> <p data-v-18e50806>If you're looking for a well rounded Web Dev who can communicate across the pipeline, look no further.</p> <p data-v-18e50806>\n        I spent most of 20-Naught rounding my production skills across Full Stack Web Dev, UI/UX Design, Vue JS, Vuex, Illustration, Graphic Design, SEO, and Storytelling in order to produce quality content.\n      </p> <p data-v-18e50806>\n        Working with a team is my forte, I'm knowledgeable in mutiple fields and I use that knowledge to communicate to my clients/coworkers how we can facilitate a seamless experience for each other.\n      </p></section></section> "),_vm._ssrNode("<section class=\"resume hero\" data-v-18e50806>","</section>",[_vm._ssrNode("<section class=\"heroPadding\" data-v-18e50806>","</section>",[_vm._ssrNode("<header data-v-18e50806><h1 data-v-18e50806>"+_vm._ssrEscape("History of a Level "+_vm._s(this.devLevel)+" Web Developer")+"</h1> <h2 data-v-18e50806>Web Designer, Comics Artist, Illustrator, Cryptographer, Storyteller, Friendly Guy, Designer</h2></header> "),_vm._ssrNode("<section class=\"experience\" data-v-18e50806>","</section>",[_vm._ssrNode("<h1 data-v-18e50806>Work History</h1> "),_c('ResumeBlock',{attrs:{"type":"job","title":"Freelance Web Developer","subtitle":"Austin, TX","role":"Owner & Operator","startDate":"Feb 2013","endDate":"Present","list":[
+=======
+// CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./pages/resume.vue?vue&type=template&id=42537364&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"resumePage"},[_vm._ssrNode("<section class=\"hero\" data-v-42537364><section class=\"heroPadding\" data-v-42537364><h1 data-v-42537364>Resume</h1> <p data-v-42537364>If you're looking for a well rounded Web Dev who can communicate across the pipeline, look no further.</p> <p data-v-42537364>\n        I spent most of 20-Naught rounding my production skills across Full Stack Web Dev, UI/UX Design, Vue JS, Vuex, Illustration, Graphic Design, SEO, and Storytelling in order to produce quality content.\n      </p> <p data-v-42537364>\n        Working with a team is my forte, I'm knowledgeable in mutiple fields and I use that knowledge to communicate to my clients/coworkers how we can facilitate a seamless experience for each other.\n      </p></section></section> "),_vm._ssrNode("<section class=\"resume hero\" data-v-42537364>","</section>",[_vm._ssrNode("<section class=\"heroPadding\" data-v-42537364>","</section>",[_vm._ssrNode("<header data-v-42537364><h1 data-v-42537364>"+_vm._ssrEscape("History of a Level "+_vm._s(this.devLevel)+" Web Developer")+"</h1> <h2 data-v-42537364>Web Designer, Comics Artist, Illustrator, Cryptographer, Storyteller, Friendly Guy, Designer</h2></header> "),_vm._ssrNode("<section class=\"experience\" data-v-42537364>","</section>",[_vm._ssrNode("<h1 data-v-42537364>Work History</h1> "),_c('ResumeBlock',{attrs:{"type":"job","title":"Freelance Web Developer","subtitle":"Austin, TX","role":"Owner & Operator","startDate":"Feb 2013","endDate":"Present","list":[
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
           'cooperate with individual and business branding through art, websites, and iconography.',
           'work spans over 7 years, clientel ranges from college campus programs, to Youtube channels, Kickstarters, Twitch streamers, family owned businesses, individuals etc.' ]}}),_vm._ssrNode(" "),_c('ResumeBlock',{attrs:{"type":"job","title":"Creative Converting","subtitle":"Indianapolis, IN","role":"Merchandising Coordinator","startDate":"AUG 2018","endDate":"SEPT 2019","list":[
           'printed accurate product samples, cut, assembled, and packaged for mockups.',
           'managed and fulfilled multiple sample orders on deadlines for trade shows, sales meetings, and clients.',
           'navigated physical and digital catalogs to accurately assemble hundreds of name brand products, and custom trade show displays',
           'suggested ways to improve efficiancy in workplace processes'
+<<<<<<< HEAD
           ]}})],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"skills\" data-v-18e50806>","</section>",[_vm._ssrNode("<h1 data-v-18e50806>Proficiencies</h1> "),_vm._ssrNode("<h2 data-v-18e50806>","</h2>",[_c('Icon',{attrs:{"name":"desktop"}}),_vm._ssrNode(" Operating Systems")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"resumeFlexRow\" data-v-18e50806>","</section>",[_c('ResumeChip',{attrs:{"iconName":"keyboard","skill":"Mac OS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"desktop","skill":"Windows OS"}})],2),_vm._ssrNode(" <br data-v-18e50806> "),_vm._ssrNode("<h2 data-v-18e50806>","</h2>",[_c('Icon',{attrs:{"name":"code"}}),_vm._ssrNode(" Coding")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"resumeFlexRow\" data-v-18e50806>","</section>",[_c('ResumeChip',{attrs:{"iconName":"file-code","skill":"HTML 5"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"code","skill":"CSS 3"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"laptop-code","skill":"Javascript ES6"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"Visual Studio Code"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"code-branch","skill":"Github"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"people-carry","skill":"NPM"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"Vue JS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"React JS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"Nuxt JS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"fire-alt","skill":"Google Firebase"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"database","skill":"SQL"}})],2),_vm._ssrNode(" <br data-v-18e50806> "),_vm._ssrNode("<h2 data-v-18e50806>","</h2>",[_c('Icon',{attrs:{"name":"swatchbook"}}),_vm._ssrNode(" Design")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"resumeFlexRow\" data-v-18e50806>","</section>",[_c('ResumeChip',{attrs:{"iconName":"palette","skill":"Procreate"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"search-plus","skill":"Photoshop"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"bezier-curve","skill":"Illustrator"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"edit","skill":"InDesign"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"film","skill":"Premier"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"microphone","skill":"Audition"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"camera-retro","skill":"Photography"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"blender","skill":"Blender"}})],2)],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"education\" data-v-18e50806>","</section>",[_vm._ssrNode("<h1 data-v-18e50806>Education</h1> "),_c('ResumeBlock',{attrs:{"type":"education","title":"Full Stack Bootcamp","subtitle":"Austin Coding Academy","role":"Certified Full Stack Web Developer","startDate":"MAR 2020","endDate":"SEPT 2019","list":[
+=======
+          ]}})],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"skills\" data-v-42537364>","</section>",[_vm._ssrNode("<h1 data-v-42537364>Proficiencies</h1> "),_vm._ssrNode("<h2 data-v-42537364>","</h2>",[_c('Icon',{attrs:{"name":"desktop"}}),_vm._ssrNode(" Operating Systems")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"resumeFlexRow\" data-v-42537364>","</section>",[_c('ResumeChip',{attrs:{"iconName":"keyboard","skill":"Mac OS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"desktop","skill":"Windows OS"}})],2),_vm._ssrNode(" <br data-v-42537364> "),_vm._ssrNode("<h2 data-v-42537364>","</h2>",[_c('Icon',{attrs:{"name":"code"}}),_vm._ssrNode(" Coding")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"resumeFlexRow\" data-v-42537364>","</section>",[_c('ResumeChip',{attrs:{"iconName":"file-code","skill":"HTML 5"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"code","skill":"CSS 3"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"laptop-code","skill":"Javascript ES6"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"Visual Studio Code"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"code-branch","skill":"Github"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"people-carry","skill":"NPM"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"Vue JS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"React JS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"cubes","skill":"Nuxt JS"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"fire-alt","skill":"Google Firebase"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"database","skill":"SQL"}})],2),_vm._ssrNode(" <br data-v-42537364> "),_vm._ssrNode("<h2 data-v-42537364>","</h2>",[_c('Icon',{attrs:{"name":"swatchbook"}}),_vm._ssrNode(" Design")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"resumeFlexRow\" data-v-42537364>","</section>",[_c('ResumeChip',{attrs:{"iconName":"palette","skill":"Procreate"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"search-plus","skill":"Photoshop"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"bezier-curve","skill":"Illustrator"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"edit","skill":"InDesign"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"film","skill":"Premier"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"microphone","skill":"Audition"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"camera-retro","skill":"Photography"}}),_vm._ssrNode(" "),_c('ResumeChip',{attrs:{"iconName":"blender","skill":"Blender"}})],2)],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"education\" data-v-42537364>","</section>",[_vm._ssrNode("<h1 data-v-42537364>Education</h1> "),_c('ResumeBlock',{attrs:{"type":"education","title":"Full Stack Bootcamp","subtitle":"Austin Coding Academy","role":"Certified Full Stack Web Developer","startDate":"MAR 2020","endDate":"SEPT 2019","list":[
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
           'Completed this biweekly intensive bootcamp course over 7 months during COVID quarantine, I receieved a full stack certification in 2020.',
           'The bootcamp covered HTML, CSS, Javascript, React.js, Github, Node.js, Unit Testing, SQL, and various APIs.'
           ]}}),_vm._ssrNode(" "),_c('ResumeBlock',{attrs:{"type":"education","title":"Media Arts and Science","subtitle":"IUPUI","role":"Various Studies in Computer Science","startDate":"2011","endDate":"2015, 2018","list":[
           'Studied various subject matters from digital media, illustration, to cartooning. Each of these focuses helped develop my abilities as a designer, and as a creative mind despite choosing not to continue pursuing college education.'
           ]}}),_vm._ssrNode(" "),_c('ResumeBlock',{attrs:{"type":"education","title":"Ongoing Research","subtitle":"","role":"Independent Self-Education","startDate":"2010","endDate":"Present","list":[
           'Regularly research topics relevant to my freelance work, including Adobe Suite, new standards in ES6, Javascript, web frameworks, and more to stay relevant in my practice.'
+<<<<<<< HEAD
           ]}})],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"personal\" data-v-18e50806>","</section>",[_vm._ssrNode("<h1 data-v-18e50806>Personal Work</h1> "),_c('ResumeBlock',{attrs:{"type":"project","title":"Dungeons of Amara","subtitle":"Kickstarter Book of Art and Poetry","description":"I successfully crowd funded and published a softback art book titled \"Dungeons of Amara\" which is a playable RPG dice game filled with artwork and poetry.","url":"https://www.kickstarter.com/projects/dungeonsofamara/dungeons-of-amara-poems-about-monsters-and-townfol","linkText":"Check It Out!","iconName":"book-reader"}}),_vm._ssrNode(" "),_c('ResumeBlock',{attrs:{"type":"project","title":"Moebius Dungeons","what":"Full Stack Vue JS Web Game","description":"During my time as a student of Austin Coding Academy, I created a full stack web game using Vue.js and Google's Firebase Backend","url":"https://www.moebiusdungeons.com","linkText":"Play the Game!","iconName":"gamepad"}})],2)],2)])],2)}
 var staticRenderFns = []
 
@@ -321,6 +429,16 @@ var staticRenderFns = []
 
 // EXTERNAL MODULE: external "moment"
 var external_moment_ = __webpack_require__(117);
+=======
+          ]}})],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"personal\" data-v-42537364>","</section>",[_vm._ssrNode("<h1 data-v-42537364>Personal Work</h1> "),_c('ResumeBlock',{attrs:{"type":"project","title":"Dungeons of Amara","subtitle":"Kickstarter Book of Art and Poetry","description":"I successfully crowd funded and published a softback art book titled \"Dungeons of Amara\" which is a playable RPG dice game filled with artwork and poetry.","url":"https://www.kickstarter.com/projects/dungeonsofamara/dungeons-of-amara-poems-about-monsters-and-townfol","linkText":"Check It Out!","iconName":"book-reader"}}),_vm._ssrNode(" "),_c('ResumeBlock',{attrs:{"type":"project","title":"Moebius Dungeons","what":"Full Stack Vue JS Web Game","description":"During my time as a student of Austin Coding Academy, I created a full stack web game using Vue.js and Google's Firebase Backend","url":"https://www.moebiusdungeons.com","linkText":"Play the Game!","iconName":"gamepad"}})],2)],2)])],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./pages/resume.vue?vue&type=template&id=42537364&scoped=true&
+
+// EXTERNAL MODULE: external "moment"
+var external_moment_ = __webpack_require__(121);
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment_);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./pages/resume.vue?vue&type=script&lang=js&
@@ -496,7 +614,11 @@ var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment
         title: `Resume`,
         meta: [{
           property: "og:url",
+<<<<<<< HEAD
           content: `@/assets/imgs/og/resume.jpg`
+=======
+          content: `@/assets/imgs/og/resume.png`
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
         }, {
           property: "og:description",
           content: `Sean Yager's resume, featuring his recent projects in art, web development, and freelance branding.`
@@ -517,7 +639,11 @@ var componentNormalizer = __webpack_require__(3);
 
 function injectStyles (context) {
   
+<<<<<<< HEAD
   var style0 = __webpack_require__(128)
+=======
+  var style0 = __webpack_require__(132)
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -530,15 +656,24 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
+<<<<<<< HEAD
   "18e50806",
   "7737e8a0"
+=======
+  "42537364",
+  "7d5eddbe"
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
   
 )
 
 /* harmony default export */ var resume = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
+<<<<<<< HEAD
 installComponents(component, {ResumeBlock: __webpack_require__(140).default,ResumeChip: __webpack_require__(141).default})
+=======
+installComponents(component, {ResumeBlock: __webpack_require__(144).default,ResumeChip: __webpack_require__(145).default})
+>>>>>>> 87f71c3bfca1568a2c7cf8939f7c05dfcfffc171
 
 
 /***/ })
