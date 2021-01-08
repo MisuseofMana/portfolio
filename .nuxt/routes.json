@@ -3,24 +3,28 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_5f513eae"
   },
   {
     "name": "resume",
     "path": "/resume",
     "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\resume.vue",
-    "chunkName": "pages/resume"
+    "chunkName": "pages/resume",
+    "_name": "_16fd865c"
   },
   {
     "name": "projects-projectTemplate",
     "path": "/projects/:projectTemplate?",
     "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\projects\\\\_projectTemplate.vue",
-    "chunkName": "pages/projects/_projectTemplate"
+    "chunkName": "pages/projects/_projectTemplate",
+    "_name": "_1209661d"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Sean Yager\\\\Desktop\\\\animatedLandingPage\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_7f091973"
   }
 ]
