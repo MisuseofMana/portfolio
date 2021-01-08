@@ -146,7 +146,7 @@
           title="Moebius Dungeons"
           what="Full Stack Vue JS Web Game"
           description="During my time as a student of Austin Coding Academy, I created a full stack web game using Vue.js and Google's Firebase Backend"
-          url="https://www.moebiusdungeons.com"
+          url="https://moebiusdungeons.com/"
           linkText="Play the Game!"
           iconName="gamepad"
         />
