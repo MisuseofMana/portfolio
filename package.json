@@ -15,7 +15,7 @@
     "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "nuxt": "^2.14.10",
     "vue": "^2.6.11",
     "vue-awesome": "^4.1.0",
