@@ -23,6 +23,16 @@ const comics = {
       action: "Read",
     },
     {
+      title:"Wishmaker",
+      category:"Comic",
+      description:['A comic about old memories and sentimental value.'],
+      cardalt:"Alternate design comic cover for Wishmaker. An orange scarf billows in the background behind the wishmaker casting a blue spell.",
+      background:"wishmakerSplash",
+      smallBackground:'smallWishmakerSplash',
+      link:"https://misuseofmana.gumroad.com/l/wishmaker",
+      action: "Read",
+    },
+    {
       title:"Psychic x2 Cowboy",
       category:"Comic",
       description:['A tale about a double psychic cowboy.', 'Chapter 1 Arriving Mid 2021'],
