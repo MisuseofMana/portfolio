@@ -35,7 +35,7 @@ const comics = {
     {
       title:"Psychic x2 Cowboy",
       category:"Comic",
-      description:['A tale about a double psychic cowboy.', 'Chapter 1 Arriving Mid 2021'],
+      description:['A tale about a double psychic cowboy.', 'Release TBD'],
       cardAlt:"Psychic Psychic Cowboy Comic Cover, depicts a desert scene, the sun is rising, the sunbeams are distorted and giving off rainbow colors. Cacti litter the scene and a bird scavenges the bones of a dead animal.",
       background:"ppcSplash",
       smallBackground:'smallPpcSplash',
